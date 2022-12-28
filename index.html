@@ -353,7 +353,7 @@
     <li><a href="#tab-2">Cash Game Points</a></li>
   </ul>
   <div class="tabs-stage">
-    <div id="tab-1">
+    <div id="tab-1" class="tab-content">
       <div class="d-flex tab-user-block">
       	<div class="w-25 tab-user">
       		<p><img src="assets/img/salary.png" /> Total Revenue</p>
@@ -374,7 +374,7 @@
       </div>
       <img src="assets/img/revenue.jpg" class="revenue-img" />
     </div>
-    <div id="tab-2">
+    <div id="tab-2" class="tab-content">
       
     </div>
   </div>
@@ -416,7 +416,7 @@ $('.tabs-nav a').on('click', function(event){
   event.preventDefault();
   $('.tabs-nav li').removeClass('tab-active');
   $(this).parent().addClass('tab-active');
-  $('.tabs-stage div').hide();
+  $('.tabs-stage .tab-content').hide();
   $($(this).attr('href')).show();
 });
 </script>

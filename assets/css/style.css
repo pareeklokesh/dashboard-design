@@ -700,6 +700,13 @@ td, th {
 .tabs.notification-tabs {
   margin-top: 35px;
 }
+.w-100.online-players-list {
+  height: 480px;
+}
+.online-players-list table thead input {
+  width: 100%;
+  padding: 4px 5px;
+}
 
 
 

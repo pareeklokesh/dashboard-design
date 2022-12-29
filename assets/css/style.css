@@ -777,6 +777,52 @@ td, th {
   border-color: #4c3885;
 }
 
+.js-dropdown-list li a {
+  display: block;
+  padding: .5em;
+  color: #000;
+  text-decoration: none;
+}
+
+.js-dropdown-list li {
+  padding: .5em;
+  cursor: pointer;
+  }
+  .js-dropdown-list {
+  display: none;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown .js-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.js-dropdown-list {
+  position: absolute;
+  background: #fff;
+  width: 190px;
+left: -99px;
+top: 34px;
+border: 1px solid #d5d1d1;
+}
+.js-dropdown-list li {
+  list-style: none;
+  font-size: 16px;
+}
+.js-dropdown-list li {
+ border-bottom: 1px solid #d5d1d1; 
+}
+.js-dropdown-list li:last-child {
+  border-bottom: 0;
+}
+.js-dropdown-list li:hover {
+  background: #4c3885;
+  border-color: #4c3885;
+  color: #fff;
+}
 
 
 

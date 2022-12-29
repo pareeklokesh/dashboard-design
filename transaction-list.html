@@ -310,26 +310,39 @@
 				<tr>
 					<th>☸</th>
 					<th>Id</th>
-					<th>Name</th>
-					<th>Server</th>
-					<th>Money</th>
-					<th>Pot</th>
-					<th>Game Type</th>
-					<th>Closed</th>
-					<th>For Blance</th>
-					<th>Stake</th>
+					<th>Player</th>
+					<th>Type</th>
+					<th>Sub Type</th>
+					<th>State</th>
+					<th>Date</th>
+					<th>Value</th>
+					<th>Balance</th>
+					<th>Money Type</th>
+					<th>Notes</th>
+					<th>Linked Item</th>
 				</tr>
 				<tr>
 					<td style="color: #4c3885;text-align: center;">✔❌</td>
 					<td><input type="text"></td>
 					<td><input type="text"></td>
+					<td><select><option>-</option></select></td>
+					<td><select><option>-</option></select></td>
+					<td><select><option>-</option></select></td>
+					<td>
+						<div class="w-100" style="margin-bottom: 3px;">
+							<label>Form</label>
+							<input type="date" name="">
+						</div>
+						<div class="w-100">
+							<label>To</label>
+							<input type="date" name="">
+						</div>
+					</td>
 					<td><input type="text"></td>
 					<td><input type="text"></td>
-					<td><input type="text"></td>
-					<td><input type="text"></td>
-					<td><input type="text"></td>
-					<td><input type="text"></td>
-					<td><input type="text"></td>
+					<td><select><option>-</option></select></td>
+					<td><input type="text" /></td>
+					<td></td>
 				</tr>
 			</thead>
 			<tbody>
@@ -344,16 +357,6 @@
 					<td><a href="#">omaha H/L #1</a></td>
 					<td>Cash</td>
 					<td></td>
-				</tr>
-				<tr>
-					<td>-</td>
-					<td><a href="#">toney (14315)</a></td>
-					<td>0.00</td>
-					<td>1920.95</td>
-					<td>:ffff.138.201.75.104</td>
-					<td>Reserved</td>
-					<td>-</td>
-					<td><a href="#">omaha H/L #1</a></td>
 					<td>Cash</td>
 					<td></td>
 				</tr>
@@ -368,16 +371,6 @@
 					<td><a href="#">omaha H/L #1</a></td>
 					<td>Cash</td>
 					<td></td>
-				</tr>
-				<tr>
-					<td>-</td>
-					<td><a href="#">toney (14315)</a></td>
-					<td>0.00</td>
-					<td>1920.95</td>
-					<td>:ffff.138.201.75.104</td>
-					<td>Reserved</td>
-					<td>-</td>
-					<td><a href="#">omaha H/L #1</a></td>
 					<td>Cash</td>
 					<td></td>
 				</tr>
@@ -392,16 +385,6 @@
 					<td><a href="#">omaha H/L #1</a></td>
 					<td>Cash</td>
 					<td></td>
-				</tr>
-				<tr>
-					<td>-</td>
-					<td><a href="#">toney (14315)</a></td>
-					<td>0.00</td>
-					<td>1920.95</td>
-					<td>:ffff.138.201.75.104</td>
-					<td>Reserved</td>
-					<td>-</td>
-					<td><a href="#">omaha H/L #1</a></td>
 					<td>Cash</td>
 					<td></td>
 				</tr>
@@ -416,16 +399,6 @@
 					<td><a href="#">omaha H/L #1</a></td>
 					<td>Cash</td>
 					<td></td>
-				</tr>
-				<tr>
-					<td>-</td>
-					<td><a href="#">toney (14315)</a></td>
-					<td>0.00</td>
-					<td>1920.95</td>
-					<td>:ffff.138.201.75.104</td>
-					<td>Reserved</td>
-					<td>-</td>
-					<td><a href="#">omaha H/L #1</a></td>
 					<td>Cash</td>
 					<td></td>
 				</tr>
@@ -440,16 +413,6 @@
 					<td><a href="#">omaha H/L #1</a></td>
 					<td>Cash</td>
 					<td></td>
-				</tr>
-				<tr>
-					<td>-</td>
-					<td><a href="#">toney (14315)</a></td>
-					<td>0.00</td>
-					<td>1920.95</td>
-					<td>:ffff.138.201.75.104</td>
-					<td>Reserved</td>
-					<td>-</td>
-					<td><a href="#">omaha H/L #1</a></td>
 					<td>Cash</td>
 					<td></td>
 				</tr>
@@ -464,16 +427,6 @@
 					<td><a href="#">omaha H/L #1</a></td>
 					<td>Cash</td>
 					<td></td>
-				</tr>
-				<tr>
-					<td>-</td>
-					<td><a href="#">toney (14315)</a></td>
-					<td>0.00</td>
-					<td>1920.95</td>
-					<td>:ffff.138.201.75.104</td>
-					<td>Reserved</td>
-					<td>-</td>
-					<td><a href="#">omaha H/L #1</a></td>
 					<td>Cash</td>
 					<td></td>
 				</tr>
@@ -488,16 +441,6 @@
 					<td><a href="#">omaha H/L #1</a></td>
 					<td>Cash</td>
 					<td></td>
-				</tr>
-				<tr>
-					<td>-</td>
-					<td><a href="#">toney (14315)</a></td>
-					<td>0.00</td>
-					<td>1920.95</td>
-					<td>:ffff.138.201.75.104</td>
-					<td>Reserved</td>
-					<td>-</td>
-					<td><a href="#">omaha H/L #1</a></td>
 					<td>Cash</td>
 					<td></td>
 				</tr>
@@ -512,6 +455,8 @@
 					<td><a href="#">omaha H/L #1</a></td>
 					<td>Cash</td>
 					<td></td>
+					<td>Cash</td>
+					<td></td>
 				</tr>
 				<tr>
 					<td>-</td>
@@ -522,6 +467,106 @@
 					<td>Reserved</td>
 					<td>-</td>
 					<td><a href="#">omaha H/L #1</a></td>
+					<td>Cash</td>
+					<td></td>
+					<td>Cash</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td><a href="#">toney (14315)</a></td>
+					<td>0.00</td>
+					<td>1920.95</td>
+					<td>:ffff.138.201.75.104</td>
+					<td>Reserved</td>
+					<td>-</td>
+					<td><a href="#">omaha H/L #1</a></td>
+					<td>Cash</td>
+					<td></td>
+					<td>Cash</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td><a href="#">toney (14315)</a></td>
+					<td>0.00</td>
+					<td>1920.95</td>
+					<td>:ffff.138.201.75.104</td>
+					<td>Reserved</td>
+					<td>-</td>
+					<td><a href="#">omaha H/L #1</a></td>
+					<td>Cash</td>
+					<td></td>
+					<td>Cash</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td><a href="#">toney (14315)</a></td>
+					<td>0.00</td>
+					<td>1920.95</td>
+					<td>:ffff.138.201.75.104</td>
+					<td>Reserved</td>
+					<td>-</td>
+					<td><a href="#">omaha H/L #1</a></td>
+					<td>Cash</td>
+					<td></td>
+					<td>Cash</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td><a href="#">toney (14315)</a></td>
+					<td>0.00</td>
+					<td>1920.95</td>
+					<td>:ffff.138.201.75.104</td>
+					<td>Reserved</td>
+					<td>-</td>
+					<td><a href="#">omaha H/L #1</a></td>
+					<td>Cash</td>
+					<td></td>
+					<td>Cash</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td><a href="#">toney (14315)</a></td>
+					<td>0.00</td>
+					<td>1920.95</td>
+					<td>:ffff.138.201.75.104</td>
+					<td>Reserved</td>
+					<td>-</td>
+					<td><a href="#">omaha H/L #1</a></td>
+					<td>Cash</td>
+					<td></td>
+					<td>Cash</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td><a href="#">toney (14315)</a></td>
+					<td>0.00</td>
+					<td>1920.95</td>
+					<td>:ffff.138.201.75.104</td>
+					<td>Reserved</td>
+					<td>-</td>
+					<td><a href="#">omaha H/L #1</a></td>
+					<td>Cash</td>
+					<td></td>
+					<td>Cash</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td><a href="#">toney (14315)</a></td>
+					<td>0.00</td>
+					<td>1920.95</td>
+					<td>:ffff.138.201.75.104</td>
+					<td>Reserved</td>
+					<td>-</td>
+					<td><a href="#">omaha H/L #1</a></td>
+					<td>Cash</td>
+					<td></td>
 					<td>Cash</td>
 					<td></td>
 				</tr>

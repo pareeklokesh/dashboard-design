@@ -583,9 +583,9 @@
 <script type="text/javascript" src="assets/js/jquery.js"></script>
 
 <script>
-  $(".dropdown a").click(function(){
-    $(this).toggleClass("dropdown-active");
-    $(this).next(".sub-menu-list").toggleClass("sub_menu_active");
+  $(".dropdown").click(function(){
+    $(this).addClass("dropdown-active").siblings().removeClass("dropdown-active");
+    //$(this).next(".sub-menu-list").toggleClass("sub_menu_active");
   });
 </script>
 <script>

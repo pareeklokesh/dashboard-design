@@ -439,13 +439,11 @@ $('.tabs-nav a').on('click', function(event){
     list.slideToggle(200);
   });
   list.find('li').click(function() {
-    var text = $(this).html();
-    var icon = '<i class="fa fa-chevron-down"></i>';
-    link.html(text+icon);
+    //var text = $(this).html();
+    //var icon = '<i class="fa fa-chevron-down"></i>';
+    //link.html(text+icon);
     list.slideToggle(200);
-    if (text === '* Reset') {
-      link.html('Select one option'+icon);
-    }
+    
   });
 });
 </script>

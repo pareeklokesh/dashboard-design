@@ -380,13 +380,11 @@ table{counter-reset: Serial; }
   text-transform: capitalize;
   margin-top: -1px;
 }
-.data-table tbody tr td:first-child:before{
+.data-table tbody tr td:nth-child(2):before {
   counter-increment: Serial;
 content: counter(Serial);
 text-align: left;
-display: inline-block;
-position: absolute;
-left: 25px;
+display: block;
 }
 .task-data table tr td, .task-data table tr th {
   font-size: 14px;

@@ -1,6 +1,5 @@
 body {
   font-family: "Montserrat", sans-serif !important;
-  background: #eceff4;
 }
 * {
   box-sizing: border-box;
@@ -208,12 +207,12 @@ padding-left: 85px;
   flex-wrap: nowrap;
   color: #616161;
   border-right: 1px solid #e0e0e0;
-  padding-top: 4.1rem;
+  padding-top: 4.5rem;
   width: 240px;
   position: fixed;
   top: 0;
   left: 0;
-  background: #4c3885;
+  background: #000000;
   z-index: 99;
 }
 .drawer-menu-heading {
@@ -288,7 +287,7 @@ opacity: 1;filter: inherit;
 }
 .header {
   width: 100%;
-  background: #4c3885;
+  background: #000;
   position: fixed;
   top: 0;
   z-index: 9999;
@@ -366,7 +365,7 @@ float: left;
   padding-left: 15px;
 }
 body {
-  padding-top: 60px;
+  padding-top: 90px;
   
 }
 table{counter-reset: Serial; }
@@ -393,11 +392,15 @@ display: block;
 .task-data table tr th {
   text-align: left;
 }
+/*.task-data table tr th:last-child {
+  text-align: right;
+  padding-right: 55px;
+}*/
 .task-data table.data-table tr td ,.task-data table.data-table tr th {
   border: 0;
 }
 .scroller {
-  scrollbar-color: #4c3885 #fff;
+  scrollbar-color: #000 #fff;
   scrollbar-width: thin;
 }
 
@@ -408,7 +411,7 @@ display: block;
 }
 
 .scroller::-webkit-scrollbar-thumb {
-  background: #4c3885;
+  background: #000;
 }
 .loader-line {
   position: fixed;
@@ -464,267 +467,6 @@ padding: 0;
 }
 .task-data table.enterfee-data tr td {
   padding: 10px 2px;
-}
-
-/* _____________New Css Add____________ */
-
-
-.ds-logo {
-  background: #6b5d9c;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 15px 17px;
-  margin-right: 6px;
-  width: 239px;
-  text-align: center;
-}
-.menu-toggle {
-  background: transparent !important;
-}
-.header {
-  padding-left: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.w-100 {
-  width: 100%;
-}
-.das-bg-block {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #969799;
-align-items: center;
-padding-bottom: 5px;
-}
-.das-title h1 {
-  color: #4c3885;
-  font-weight: 600;
-  font-size: 20px;
-} 
-.das-renewal p {
-  font-size: 14px;
-}
-.das-renewal select {
-  border: 1px solid #969799;
-  background: #fff;
-  padding: 2px 4px;
-  border-radius: 2px;
-}
-.d-flex {
-  display: flex;
-}
-.players-icon {
-  background: #8d61c1;
-padding: 10px 5px;
-display: flex;
-align-items: center;
-width: 74px;
-border-radius: 5px 0 0 5px;
-}
-.Player-item {
-  background: #fff;
-  width: 25%;border-radius: 5px;
-}
-.players-content {
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 5px;
-  justify-content: center;
-}
-.players-block {
-  gap: 15px;margin: 15px 0;
-}
-.d-block {
-  display: block;
-}
-.players-content p {
-  text-align: center;
-}
-.players-content {
-  width: 100%;
-}
-.tabs {
-  background: #fff;
-}
-.tabs-nav li a {
-  text-decoration: none;
-  color: #333;
-  padding: 15px 15px;
-  display: block;
-  
-  position: relative;
-  background: #fff;
-}
-.tabs-nav li {
-  border-top: 2px solid #fff;
-}
-.tabs-nav li.tab-active {
-  border-top: 2px solid #4c3885;
-}
-.tabs-nav li:last-child.tab-active {
-  border-right: 1px solid #d5d1d1;
-}
-.tabs-nav li:first-child {
-  border-right: 1px solid #d5d1d1;
-}
-.tabs-nav li.tab-active a {
-  top: 1px;
-padding-top: 13px;
-padding-bottom: 17px;
-}
-.tabs-nav {
-  list-style: none;
-  border-bottom: 1px solid #d5d1d1;
-  display: flex;
-}
-.w-25 {
-  width: 25%;
-}
-.tab-user {
-  text-align: center;
-  padding: 8px 15px;
-  border-right: 1px solid #d5d1d1;
-  margin-bottom: 15px;
-}
-.tab-user p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #1428bf;
-  opacity: 0.8;
-  font-size: 16px;
-  margin-bottom: 8px;
-}
-.tab-user p img {
-  margin-right: 10px;
-}
-.tabs-stage {
-  padding: 15px;
-}
-.tab-user:last-child {
-  border-right: 0;
-}
-.tab-user-block {
-  border-bottom: 1px solid #d5d1d1;
-}
-img {
-  max-width: 100%;
-}
-.revenue-img {
-  width: 100%;
-}
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-td, th {
-  border: 1px solid #969799;
-  padding: 5px;
-  font-size: 14px;
-  color: #676767;
-}
-.online-players-list {
-  margin-top: 35px;
-}
-.online-players-list table tbody tr:nth-child(2n) {
-  background: #e4e4e4;
-}
-.online-players-list table thead th {
-  background: #fff;
-}
-.block-user {
-  white-space: nowrap;
-  font-size: 12px;
-  background: #4c3885;
-  color: #fff;
-  border: 0;
-  padding: 5px 5px;
-  border-radius: 5px;
-}
-.block-user:first-child {
-  margin-right: 5px;
-}
-.das-title h1 sup {
-  background: #2f80d1;
-  color: #fff;
-  font-size: 12px;
-  padding: 1px 5px;
-  border-radius: 50%;
-  margin-left: 5px;
-}
-.das-select {
-  border: 1px solid #969799;
-  background: #fff;
-  padding: 2px 4px;
-  border-radius: 2px;
-}
-.ds-select-title {
-  font-size: 14px;
-}
-.main-form {
-  display: block !important;
-}
-.main-form label {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-.main-form .form-control {
-  width: 100%;
-  border: 1px solid #d5d1d1;
-  background: #fff;
-  padding: 8px 5px;
-  color: #333;
-  font-size: 16px;
-}
-.main-form .w-100 {
-  margin-bottom: 15px;
-}
-.main-form fieldset {
-  padding: 15px 15px;
-}
-.notification-tabs .tabs-nav li:first-child {
-  border-right: 0;
-  border-left: 0px !important;
-}
-.notification-tabs .tabs-nav li {
-  border-left: 1px solid #fff !important;
-  border-right: 1px solid #fff !important;
-}
-.notification-tabs .tabs-nav li.tab-active {
-  border-left-color: #d5d1d1 !important;
-  border-right-color: #d5d1d1 !important;
-}
-.tabs.notification-tabs {
-  margin-top: 35px;
-}
-.w-100.online-players-list {
-  height: 480px;
-}
-.online-players-list table thead input {
-  width: 100%;
-  padding: 4px 5px;
-}
-.online-players-list table thead select, .online-players-list table thead input {
-  width: 100%;
-  padding: 4px 5px;
-  border: 1px solid #969799;
-  background: #fff;
-  border-radius: 2px;
-}
-.online-players-list table thead label {
-  font-size: 14px;
-  color: #333;
-}
-.save-btn {
-  background: #4c3885;
-  color: #fff;
-  border: 1px solid #4c3885;
-  padding: 8px 20px;
-  font-size: 16px;
-  border-radius: 6px;
 }
 
 

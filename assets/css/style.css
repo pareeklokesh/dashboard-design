@@ -363,7 +363,7 @@ width: 100%;
 float: left;
 }
 .full-page-active {
-  padding-left: 15px;
+  padding-left: 65px;
 }
 body {
   padding-top: 60px;
@@ -734,6 +734,7 @@ td, th {
   border: 1px solid #d5d1d1;
   display: none;
   z-index: 9;
+  bottom: auto;
 }
 .action-btn button {
   width: 100%;
@@ -845,7 +846,51 @@ border: 1px solid #d5d1d1;
 .data-table tbody tr td:first-child {
   position: relative;
 }
-
+.dashboardo-block.dashboardo-block-active .das-menu-list ul li a .arrow {
+  display: none;
+}
+.dashboardo-block.dashboardo-block-active .das-menu-list ul li a {
+  font-size: 0;
+  padding-left: 8px;
+  padding-right: 0;
+}
+.dashboardo-block.dashboardo-block-active {
+  transform: inherit;
+  width: 50px;
+}
+.dashboardo-block.dashboardo-block-active:hover {
+  width: 240px;
+}
+.dashboardo-block.dashboardo-block-active:hover .das-menu-list ul li a {
+  font-size: 13px;
+  padding: 12px 18px;
+}
+.dashboardo-block.dashboardo-block-active:hover .das-menu-list ul li a .arrow {
+  display: inherit;
+}
+.filter-btn button {
+  background: #fff;
+  border: 1px solid #d5d1d1;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: all .4s linear;
+  cursor: pointer;
+}
+.filter-btn button:hover {
+  background: #4c3885;
+  color: #fff;
+  border-color: #4c3885;
+}
+.filter-btn {
+  margin-left: 10px;
+}
+.filter-item {
+  display: none;
+}
+.filter-item-open {
+  display: block;
+}
 
 
 

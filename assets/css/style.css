@@ -381,11 +381,12 @@ table{counter-reset: Serial; }
   margin-top: -1px;
 }
 .data-table tbody tr td:first-child:before{
-  counter-increment: Serial;      
-  content: counter(Serial); 
-  width: 59px;
-text-align: center;
-display: block;
+  counter-increment: Serial;
+content: counter(Serial);
+text-align: left;
+display: inline-block;
+position: absolute;
+left: 25px;
 }
 .task-data table tr td, .task-data table tr th {
   font-size: 14px;
@@ -734,6 +735,7 @@ td, th {
   padding: 8px 5px;
   border: 1px solid #d5d1d1;
   display: none;
+  z-index: 9;
 }
 .action-btn button {
   width: 100%;
@@ -822,6 +824,28 @@ border: 1px solid #d5d1d1;
   background: #4c3885;
   border-color: #4c3885;
   color: #fff;
+}
+.table-filter select, .table-filter input {
+  background: #fff;
+  border: 1px solid #d5d1d1;
+  padding: 8px 8px;
+  font-size: 14px;
+  color: #333;
+  min-width: 200px;
+}
+.table-filter {
+  display: flex;
+  justify-content: end;
+  margin-top: 25px;
+}
+.table-filter select {
+  margin-left: 8px;
+}
+.table-filter ~ .online-players-list {
+  margin-top: 15px;
+}
+.data-table tbody tr td:first-child {
+  position: relative;
 }
 
 

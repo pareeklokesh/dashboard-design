@@ -158,137 +158,7 @@
 						</li>
 					</ul>
 				</li>
-				<li class="dropdown">
-					<a href="javascript:void(0)"><img src="assets/img/dashboard.png" /><span>Messages</span>
-					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
-					</a>
-					<ul class="sub-menu-list">
-						<li>
-							<a href="#">Messages</a>
-						</li>
-						<li>
-							<a href="#">Scroller Setting</a>
-						</li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="javascript:void(0)"><img src="assets/img/dashboard.png" /><span>Manage Tournament</span>
-					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
-					</a>
-					<ul class="sub-menu-list">
-						<li>
-							<a href="#">Ludo Tournament</a>
-						</li>
-						<li>
-							<a href="#">Ludo Sng Tournament</a>
-						</li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="javascript:void(0)"><img src="assets/img/dashboard.png" /><span>Master Setting</span>
-					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
-					</a>
-					<ul class="sub-menu-list">
-						<li>
-							<a href="#">Game Category</a>
-						</li>
-						<li>
-							<a href="#">Game List</a>
-						</li>
-						<li>
-							<a href="#">Manage Maintenance</a>
-						</li>
-						<li>
-							<a href="#">Stake Details</a>
-						</li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="javascript:void(0)"><img src="assets/img/dashboard.png" /><span>Support Details</span>
-					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
-					</a>
-					<ul class="sub-menu-list">
-						<li>
-							<a href="#">Support Details</a>
-						</li>
-						<li>
-							<a href="#">Support</a>
-						</li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="javascript:void(0)"><img src="assets/img/dashboard.png" /><span>Analytics</span>
-					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
-					</a>
-					<ul class="sub-menu-list">
-						<li>
-							<a href="#">Login History</a>
-						</li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="javascript:void(0)"><img src="assets/img/dashboard.png" /><span>Turnover Report</span>
-					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
-					</a>
-					<ul class="sub-menu-list">
-						<li>
-							<a href="#">Player Turnover</a>
-						</li>
-						<li>
-							<a href="#">State Agent Turnover</a>
-						</li>
-						<li>
-							<a href="#">Master Turnover</a>
-						</li>
-						<li>
-							<a href="#">Super Agent Turnover</a>
-						</li>
-						<li>
-							<a href="#">Agent Turnover</a>
-						</li>
-						<li>
-							<a href="#">Quick Turnover</a>
-						</li>
-						<li>
-							<a href="#">Quick Turnover Claim</a>
-						</li>
-						<li>
-							<a href="#">Overall Turnover</a>
-						</li>
-						<li>
-							<a href="#">PlayerClaim Turnover</a>
-						</li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="javascript:void(0)"><img src="assets/img/dashboard.png" /><span>Commission Report</span>
-					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
-					</a>
-					<ul class="sub-menu-list">
-						<li>
-							<a href="#">State Agent Commission</a>
-						</li>
-						<li>
-							<a href="#">Master Commission</a>
-						</li>
-						<li>
-							<a href="#">Super Agent Commission</a>
-						</li>
-						<li>
-							<a href="#">Agent Commission</a>
-						</li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="javascript:void(0)"><img src="assets/img/dashboard.png" /><span>Miscellaneous</span>
-					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
-					</a>
-					<ul class="sub-menu-list">
-						<li>
-							<a href="#">Become Affiliate</a>
-						</li>
-					</ul>
-				</li>
+				
 			</ul>
 		</div>
 
@@ -314,13 +184,33 @@
 		</div>
 	</div>
 	<div class="w-100 table-filter">
-		<input type="text" placeholder="Search..." name="" class="table-search">
+		<div class="filter-item" id="filter-filter">
+			<select>
+			<option>Lorem Ipsum</option>
+			<option>Lorem Ipsum</option>
+		</select>
 		<select>
 			<option>Lorem Ipsum</option>
 			<option>Lorem Ipsum</option>
 		</select>
+		<select>
+			<option>Lorem Ipsum</option>
+			<option>Lorem Ipsum</option>
+		</select>
+		<select>
+			<option>Lorem Ipsum</option>
+			<option>Lorem Ipsum</option>
+		</select>
+		</div>
+		<div class="filter-item" id="search-filter">
+			<input type="text" placeholder="Search..." name="" class="table-search" />
+		</div>
+		<div class="filter-btn">
+			<button class="" id="search-filter-btn"><i class="fa fa-search"></i></button>
+			<button id="filter-filter-btn"><i class="fa fa-filter"></i></button>
+		</div>
 	</div>
-	<div class="w-100 online-players-list" style="overflow: auto;">
+	<div class="w-100 online-players-list" style="height: inherit;">
 		<table class="data-table">
 			<thead>
 				<tr class="data-filter">
@@ -592,7 +482,7 @@
 			</tbody>
 			<tfoot>
 				<tr>
-					<td colspan="10">
+					<td colspan="11">
 						<div class="pagination">
 							<button>|<</button>
 							<button><</button>
@@ -667,6 +557,17 @@ $('.table-search').keyup(function() {
     }).hide();
 });
 </script>
-
+<script>
+	$("#search-filter-btn").click(function(){
+		$("#search-filter").toggleClass("filter-item-open");
+		$("#filter-filter").removeClass("filter-item-open");
+	});
+</script>
+<script>
+	$("#filter-filter-btn").click(function(){
+		$("#search-filter").removeClass("filter-item-open");
+		$("#filter-filter").toggleClass("filter-item-open");
+	});
+</script>
 </body>
 </html>

@@ -707,6 +707,17 @@ td, th {
   width: 100%;
   padding: 4px 5px;
 }
+.online-players-list table thead select, .online-players-list table thead input {
+  width: 100%;
+  padding: 4px 5px;
+  border: 1px solid #969799;
+  background: #fff;
+  border-radius: 2px;
+}
+.online-players-list table thead label {
+  font-size: 14px;
+  color: #333;
+}
 
 
 

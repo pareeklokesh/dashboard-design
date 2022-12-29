@@ -758,6 +758,24 @@ td, th {
   top: 2px;
   margin-left: 3px;
 }
+.pagination button {
+  border: 1px solid #d5d1d1;
+  background: #fff;
+  padding: 5px 10px;
+  color: #676767;
+  line-height: normal;
+  border-radius: 2px;
+  transition: all .4s linear;
+  cursor: pointer;
+}
+.pagination {
+  text-align: center;
+}
+.pagination button:hover {
+  background: #4c3885;
+  color: #fff;
+  border-color: #4c3885;
+}
 
 
 

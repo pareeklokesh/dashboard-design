@@ -367,7 +367,7 @@
 
 <script>
   $(".dropdown").click(function(){
-    $(this).addClass("dropdown-active").siblings().removeClass("dropdown-active");
+    $(this).toggleClass("dropdown-active").siblings().removeClass("dropdown-active");
     //$(this).next(".sub-menu-list").toggleClass("sub_menu_active");
   });
 </script>

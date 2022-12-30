@@ -914,7 +914,7 @@ border: 1px solid #d5d1d1;
 .table-filter {
   position: relative;
 }
-.filter-item {
+/*.filter-item {
   position: absolute;
   right: 0;
   top: 50px;
@@ -924,12 +924,12 @@ padding: 8px 10px;
 background: #fff;
 border:1px solid #d5d1d1;
 border-radius: 0px;
-}
-.table-filter select, .table-filter input {
+}*/
+/*.table-filter select, .table-filter input {
   width: 100%;
 max-width: 100%;
 margin-left: 0;
-}
+}*/
 .table-filter select {
   margin-bottom: 5px;
 }
@@ -938,6 +938,10 @@ margin-left: 0;
   width: 50px;
   padding-left: 2px;
   font-size: 14px;
+}
+.ds-logo {
+  min-height: 49px;
+  font-size: 0 !important;
 }
 
 

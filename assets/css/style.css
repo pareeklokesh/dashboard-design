@@ -1017,6 +1017,10 @@ margin-left: 0;
   cursor: auto;
   pointer-events: none;
 }
+.das-menu-list ul li .sub-menu-list li a.active {
+  color: #4c3885;
+  font-weight: bold;
+}
 
 
 

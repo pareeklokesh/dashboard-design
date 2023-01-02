@@ -1091,6 +1091,9 @@ border-right: 1px solid #d5d1d1
   margin-right: 12px;
   font-size: 16px;
 }
+.table-row p span {
+  margin-left: 15px;
+}
 
 
 

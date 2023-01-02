@@ -726,15 +726,17 @@ td, th {
   border-radius: 6px;
 }
 .action-btn {
-  width: 161px;
-  position: absolute;
-  left: -89px;
-  background: #fff;
-  /*padding: 8px 5px;*/
-  border: 1px solid #d5d1d1;
-  display: none;
-  z-index: 9;
-  bottom: auto;
+  width: 470px;
+position: absolute;
+left: -386px;
+background: #fff;
+padding: 0;
+border: 1px solid #d5d1d1;
+display: none;
+z-index: 9;
+bottom: auto;
+border-right: 0;
+border-bottom: 0;
 }
 /*.action-btn button {
   width: 100%;
@@ -748,7 +750,8 @@ td, th {
   border-radius: 3px;
 }*/
 .action-btn-open {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
 .position-relative {
   position: relative;
@@ -1047,15 +1050,16 @@ border-radius: inherit !important;
   bottom: 1px;
 }
 .action-btn button {
-  width: 100%;
-  background: #fff;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  text-align: left;
-  font-family: "Montserrat", sans-serif !important;
+  width: 33.3%;
+background: #fff;
+border-left: 0;
+border-right: 0;
+border-top: 0;
+text-align: left;
+font-family: "Montserrat", sans-serif !important;
 font-size: 14px;
 transition: all .4s linear;
+border-right: 1px solid #d5d1d1
 }
 .action-btn button:hover {
   background-color: #4c3885;
@@ -1063,7 +1067,7 @@ transition: all .4s linear;
   border-color: #4c3885;
 }
 .action-btn button:last-child {
-  border-bottom: 0px;
+  /*border-bottom: 0px;*/
 }
 .filter-btn button:hover img {
   filter: grayscale(0) invert(100%);
@@ -1074,6 +1078,13 @@ transition: all .4s linear;
 .filter-btn-active .active-filter {
   display: block;
 }
+#filter-filter {
+  margin-top: 10px;
+}
+.action {
+  cursor: pointer;
+}
+
 
 
 

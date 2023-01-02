@@ -650,7 +650,7 @@
 		</table>
 		<div class="table-row">
 			<p>Rows per page <select><option>10</option><option>15</option><option>15</option></select>
-			<span class="">1-2 of 15</span>
+			<span class="">1-10 of 15</span>
 		</p>
 
 		</div>
@@ -673,7 +673,8 @@
     $('.table tbody').paginathing({
       perPage: 10,
       insertAfter: '.table',
-      pageNumbers: true
+      pageNumbers: true,
+      lengthItems: true
     });
   });
 </script>

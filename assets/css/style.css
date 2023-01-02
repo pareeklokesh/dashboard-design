@@ -730,13 +730,13 @@ td, th {
   position: absolute;
   left: -89px;
   background: #fff;
-  padding: 8px 5px;
+  /*padding: 8px 5px;*/
   border: 1px solid #d5d1d1;
   display: none;
   z-index: 9;
   bottom: auto;
 }
-.action-btn button {
+/*.action-btn button {
   width: 100%;
   background: #4c3885;
   color: #fff;
@@ -746,7 +746,7 @@ td, th {
   padding: 10px 5px;
   margin-bottom: 5px;
   border-radius: 3px;
-}
+}*/
 .action-btn-open {
   display: block;
 }
@@ -785,7 +785,7 @@ td, th {
   text-decoration: none;
 }
 
-.js-dropdown-list li {
+.js-dropdown-list li, .action-btn button {
   padding: .5em;
   cursor: pointer;
   }
@@ -809,11 +809,11 @@ left: -99px;
 top: 34px;
 border: 1px solid #d5d1d1;
 }
-.js-dropdown-list li {
+.js-dropdown-list li, .action-btn button {
   list-style: none;
   font-size: 16px;
 }
-.js-dropdown-list li {
+.js-dropdown-list li, .action-btn button {
  border-bottom: 1px solid #d5d1d1; 
 }
 .js-dropdown-list li:last-child {
@@ -896,6 +896,9 @@ border: 1px solid #d5d1d1;
   border-radius: 50%;
   transition: all .4s linear;
   cursor: pointer;
+  display: flex;
+align-items: center;
+justify-content: center;
 }
 .filter-btn button:hover {
   background: #4c3885;
@@ -980,7 +983,7 @@ border-radius: inherit !important;
 }
 .pagination {
   display: flex;
-  justify-content: center;
+  justify-content: end;
 }
 .pagination li.first a, .pagination li.last a, .pagination li.prev a, .pagination li.next a {
   font-size: 0;
@@ -998,9 +1001,9 @@ border-radius: inherit !important;
 .pagination li.prev a::before {
   content: "<";
 }
-.pagination li.pageNumbers {
+/*.pagination li.pageNumbers {
   display: none;
-}
+}*/
 .pagination {
   margin-top: 10px;
 }
@@ -1023,6 +1026,53 @@ border-radius: inherit !important;
 .das-menu-list ul li .sub-menu-list li a.active, .das-menu-list ul li .sub-menu-list li a:hover {
   background: #868585;
   color: #fff;
+}
+.table-row p {
+  font-size: 15px;
+}
+.table-row select {
+  border: 1px solid #d5d1d1;
+  background: #fff;
+  padding: 5px 10px;
+  color: #676767;
+  font-size: 15px;
+}
+.online-players-list {
+  position: relative;
+}
+.table-row {
+  width: auto;
+  position: absolute;
+  right: 320px;
+  bottom: 1px;
+}
+.action-btn button {
+  width: 100%;
+  background: #fff;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  text-align: left;
+  font-family: "Montserrat", sans-serif !important;
+font-size: 14px;
+transition: all .4s linear;
+}
+.action-btn button:hover {
+  background-color: #4c3885;
+  color: #fff;
+  border-color: #4c3885;
+}
+.action-btn button:last-child {
+  border-bottom: 0px;
+}
+.filter-btn button:hover img {
+  filter: grayscale(0) invert(100%);
+}
+.active-filter, .filter-btn-active .deactive-filter {
+  display: none;
+}
+.filter-btn-active .active-filter {
+  display: block;
 }
 
 

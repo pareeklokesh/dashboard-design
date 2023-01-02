@@ -693,8 +693,7 @@
 
 <script>
 	$(".action").click(function(){
-		debugger;
-		$(this).parent().toggleClass("action-btn-open").siblings().removeClass("action-btn-open");
+		$(this).parent().parent().toggleClass("action-btn-open").siblings().removeClass("action-btn-open");
 	});
 </script>
 <script>

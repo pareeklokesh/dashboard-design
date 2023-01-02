@@ -182,17 +182,19 @@
 		<div class="das-title">
 			<h1>Online Players List</h1>
 		</div>
-		<div class="filter-btn">
-			<button class="" id="search-filter-btn"><i class="fa fa-search"></i></button>
+		<div class="filter-btn" style="display: flex;">
+			<div class="filter-item" id="search-filter" style="margin-right: 15px;">
+			<input type="text" placeholder="Search..." name="" class="table-search table-search-in" />
+			<button class="search-btn"><i class="fa fa-search"></i></button>
+		</div>
+			<button class="" id="search-filter-btn" style="margin-right:10px;"><i class="fa fa-search"></i></button>
 			<button id="filter-filter-btn"><i class="fa fa-filter"></i></button>
 		</div>	
+
 	</div>
 	
 	<div class="w-100 table-filter" style="margin-top: 15px;">
-	<div class="filter-item" id="search-filter">
-			<input type="text" placeholder="Search..." name="" class="table-search" />
-			<button class="search-btn"><i class="fa fa-search"></i></button>
-		</div>
+	
 	<div class="filter-item" id="filter-filter">
 			<select>
 			<option>Lorem Ipsum</option>

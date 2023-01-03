@@ -1148,11 +1148,17 @@ border-right: 1px solid #d5d1d1
 .online-players-list table thead th {
   white-space: nowrap;
 }
-.online-players-list table tbody tr {
+.online-players-list table tbody tr, .action img {
   transition: all .4s linear;
 }
 .online-players-list table tbody tr:hover {
   background: #fff;
+}
+.action-btn-open .action img {
+  transform: rotate(90deg);
+}
+.dropdown-admin.is-active .js-dropdown-list {
+  display: block;
 }
 
 

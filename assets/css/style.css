@@ -852,48 +852,22 @@ border: 1px solid #d5d1d1;
 .data-table tbody tr td:first-child {
   position: relative;
 }
-.dashboardo-block.dashboardo-block-active .das-menu-list ul li a .arrow {
-  display: none;
-}
-.dashboardo-block.dashboardo-block-active .das-menu-list ul li a {
-  font-size: 0;
-  padding-left: 8px;
-  padding-right: 0;
-  transition: inherit !important;
-}
+
 .dashboardo-block.dashboardo-block-active .das-menu-list ul li {
   overflow-y: hidden;
 }
 .dashboardo-block.dashboardo-block-active .das-menu-list ul li a * {
   transition: inherit !important;
 }
-.dashboardo-block.dashboardo-block-active .das-menu-list ul li a span {
-  display: none;
-}
-.dashboardo-block.dashboardo-block-active {
-  transform: inherit;
-  width: 50px;
-}
-.dashboardo-block.dashboardo-block-active:hover {
-  width: 240px;transition: inherit !important;
-}
+
+
 .dashboardo-block.dashboardo-block-active *, .dashboardo-block.dashboardo-block-active, .dashboardo-block.dashboardo-block-active .das-menu-list ul li a {
   transition: all .0s linear !important;
 }
 .dashboardo-block.dashboardo-block-active:hover {
   transition: all 0s linear !important;
 }
-.dashboardo-block.dashboardo-block-active:hover .das-menu-list ul li a {
-  display: block;
-  padding: 12px 18px;
-  font-size: 13px;
-}
-.dashboardo-block.dashboardo-block-active:hover .das-menu-list ul li a span {
-  display: inline-block;
-}
-.dashboardo-block.dashboardo-block-active:hover .das-menu-list ul li a .arrow {
-  display: inline-block;
-}
+
 .filter-btn button {
   background: #fff;
   border: 1px solid #d5d1d1;
@@ -1167,7 +1141,51 @@ border-right: 1px solid #d5d1d1
 
 
 
+@media (min-width: 992px) {
+  .dashboardo-block.dashboardo-block-active {
+  transform: inherit;
+  width: 50px;
+}
+.dashboardo-block.dashboardo-block-active:hover {
+  width: 240px;transition: inherit !important;
+}
+.dashboardo-block.dashboardo-block-active:hover .das-menu-list ul li a {
+  display: block;
+  padding: 12px 18px;
+  font-size: 13px;
+}
+.dashboardo-block.dashboardo-block-active:hover .das-menu-list ul li a span {
+  display: inline-block;
+}
+.dashboardo-block.dashboardo-block-active:hover .das-menu-list ul li a .arrow {
+  display: inline-block;
+}
 
+.dashboardo-block.dashboardo-block-active .das-menu-list ul li a .arrow {
+  display: none;
+}
+.dashboardo-block.dashboardo-block-active .das-menu-list ul li a span {
+  display: none;
+}
+.dashboardo-block.dashboardo-block-active .das-menu-list ul li a {
+  font-size: 0;
+  padding-left: 8px;
+  padding-right: 0;
+  transition: inherit !important;
+}
+.dashboardo-block.dashboardo-block-active .das-menu-list ul li a * {
+  transition: inherit !important;
+}
+
+
+.dashboardo-block.dashboardo-block-active *, .dashboardo-block.dashboardo-block-active, .dashboardo-block.dashboardo-block-active .das-menu-list ul li a {
+  transition: all .0s linear !important;
+}
+.dashboardo-block.dashboardo-block-active:hover {
+  transition: all 0s linear !important;
+}
+
+}
 
 @media (min-width: 767px) {
   .table-filter input.table-search, .table-search-in {
@@ -1192,11 +1210,26 @@ border-right: 1px solid #d5d1d1
 .menu-toggle-active {
   background: #2e2e2e;
 }
+.ds-logo {
+  width: 50px;
+}
+.das-title h1 {
+  font-size: 16px;
+}
+.online-players-list {
+  overflow: scroll;
+  padding-bottom: 15px;
+}
+
 
 
 }
 
 @media (max-width: 767px) {
+  .filter-btn button {
+  width: 25px;
+  height: 25px;
+}
   .dashboard-list li {
   width: 31%;
 margin-bottom: 15px;
@@ -1246,6 +1279,48 @@ body {
 .task-data table tr td, .task-data table tr th {
   font-size: 12px;padding: 5px 4px;
 }
+.online-players-list table thead th {
+  padding-right: 22px;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+#search-filter {
+  width: 100%;
+  margin-right: 0 !important;
+  order: 2;
+}
+.filter-btn {
+  flex-wrap: wrap;
+  justify-content: end;
+}
+#search-filter .table-search.table-search-in {
+  width: 100%;
+}
+.filter-item.filter-item-open ~ button {
+  margin-top: -16px;
+  position: relative;
+  top: -7px;
+}
+.table-filter select {
+  min-width: 47% !important;
+}
+.filter-item-open {
+  display: block;
+}
+#filter-filter.filter-item-open {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
+}
+
+@media (max-width:420px) {
+  .dataTables_paginate.paging_simple_numbers {
+  width: 100%;
+  position: static;
+  margin-top: 10px;
+  justify-content: end;
+}
 }

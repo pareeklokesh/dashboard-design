@@ -965,7 +965,7 @@ border-radius: inherit !important;
 #search-filter.filter-item-open {
   display: flex;
 }
-.pagination li a {
+.pagination li a, .dataTables_paginate.paging_simple_numbers a {
   list-style: none;
   border: 1px solid #d5d1d1;
   background: #fff;
@@ -1013,7 +1013,7 @@ border-radius: inherit !important;
 .pagination {
   margin-top: 10px;
 }
-.pagination li a:hover, .pagination li.active a {
+.pagination li a:hover, .pagination li.active a, .dataTables_paginate.paging_simple_numbers a:hover {
   background: #4c3885;
   color: #fff;
   border-color: #4c3885;
@@ -1094,6 +1094,58 @@ border-right: 1px solid #d5d1d1
 .table-row p span {
   margin-left: 15px;
 }
+#DataTables_Table_0_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+#DataTables_Table_0_length {
+  order: 2;
+}
+#DataTables_Table_0_filter {display: none;}
+#DataTables_Table_0 {
+  width: 100%;
+  order: 1;
+}
+#DataTables_Table_0_info {
+  order: 3;
+}
+#DataTables_Table_0_paginate {
+  order: 4;
+}
+.dataTables_paginate.paging_simple_numbers {
+  display: flex;
+}
+.dataTables_paginate.paging_simple_numbers span {
+  display: flex;
+}
+.dataTables_length label {
+  font-size: 15px;
+}
+.dataTables_length select {
+  border: 1px solid #d5d1d1;
+  background: #fff;
+  padding: 5px 10px;
+  color: #676767;
+  font-size: 15px;
+}
+.dataTables_info {
+  margin-left: 15px;
+  font-size: 15px;
+  padding-top: 6px;
+}
+#DataTables_Table_0 {
+  margin-bottom: 15px;
+}
+.dataTables_paginate.paging_simple_numbers {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.online-players-list table thead th img {
+  cursor: pointer;
+}
+
 
 
 

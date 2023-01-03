@@ -22,7 +22,7 @@
 				</button>
 			</div>
 			<div class="status-game">
-				<div class="dropdown">
+				<div class="dropdown dropdown-admin">
   <a href="#" class="js-link">Admin <i class="fa fa-chevron-down"></i></a>
   <ul class="js-dropdown-list">
     <li><i class="fa fa-user"></i> My Account</li>
@@ -1888,23 +1888,35 @@
 </script>
 <script>
 
-	$(function() {
-  var list = $('.js-dropdown-list');
-  var link = $('.js-link');
-  link.click(function(e) {
-  	$(".online-players-list table tbody tr").removeClass("action-btn-open");
-    e.preventDefault();
-    list.slideToggle(200);
-  });
-  list.find('li').click(function() {
-    //var text = $(this).html();
-    //var icon = '<i class="fa fa-chevron-down"></i>';
-    //link.html(text+icon);
-    list.slideToggle(200);
-    
-  });
+	
 
-});
+
+
+   
+
+const $menu = $('.dropdown-admin')
+
+const onMouseUp = e => {
+ if (!$menu.is(e.target) // If the target of the click isn't the container...
+   && $menu.has(e.target).length === 0) // ... or a descendant of the container.
+   {
+     $menu.removeClass('is-active')
+  }
+}
+
+$('.js-link').on('click', () => {
+  $menu.toggleClass('is-active').promise().done(() => {
+    if ($menu.hasClass('is-active')) {
+      $(document).on('mouseup', onMouseUp) // Only listen for mouseup when menu is active...
+    } else {
+      $(document).off('mouseup', onMouseUp) // else remove listener.
+    }
+  })
+})
+
+
+
+	
 </script>
 
 <script>

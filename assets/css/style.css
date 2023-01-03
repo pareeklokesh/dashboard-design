@@ -1145,6 +1145,15 @@ border-right: 1px solid #d5d1d1
 .online-players-list table thead th img {
   cursor: pointer;
 }
+.online-players-list table thead th {
+  white-space: nowrap;
+}
+.online-players-list table tbody tr {
+  transition: all .4s linear;
+}
+.online-players-list table tbody tr:hover {
+  background: #fff;
+}
 
 
 

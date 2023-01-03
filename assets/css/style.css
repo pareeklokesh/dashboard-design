@@ -760,9 +760,9 @@ border-bottom: 0;
   position: relative;
 }
 .data-filter th img {
-  width: 15px;
+  /*width: 15px;
   position: relative;
-  top: 2px;
+  top: 2px;*/
   margin-left: 3px;
 }
 .pagination button {
@@ -1134,6 +1134,32 @@ border-right: 1px solid #d5d1d1
 .dropdown-admin.is-active .js-dropdown-list {
   display: block;
 }
+.dashboardo-block.scroller, .full-page {
+  transition: transform 250ms ease-in-out !important;
+}
+.sort-active {
+  display: none;
+}
+.sorting_asc .sort-unactive {
+  display: none;
+}
+.sorting_asc .sort-active {
+  display: block;
+}
+/*.online-players-list table thead th {
+  padding-right: 16px;
+}*/
+.online-players-list table thead th .d-flex {
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
 
 
 

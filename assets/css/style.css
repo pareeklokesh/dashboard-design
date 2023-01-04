@@ -1213,7 +1213,7 @@ border-right: 1px solid #d5d1d1
 .action-btn.actin-payment-btn button span {
   display: block;
   font-size: 12px;
-  color: #333;
+  color: #000;
 }
 .action-btn.actin-payment-btn button p {
   padding-left: 5px;
@@ -1285,8 +1285,6 @@ transform: rotate(-135deg);
   color: #000;
   padding: 5px;
 margin-bottom: 10px;
-
-transition: 250ms ease-in-out;
 border-radius: 4px;
 }
 .action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button:hover {
@@ -1352,7 +1350,23 @@ border-radius: 5px;
   }
   .dashboardo-block.dashboardo-block-active {
   transform: inherit;
-  width: 55px;
+  width: auto;
+min-width: 55px;
+}
+.dashboardo-block.dashboardo-block-active .dropdown.dropdown-active a span, .dashboardo-block.dashboardo-block-active .dropdown.dropdown-active a span.arrow {
+  display: block;
+}
+.dashboardo-block.dashboardo-block-active .dropdown.dropdown-active a {
+  padding-right: 45px;
+  background: #fff !important;color: #212121 !important;
+}
+.dashboardo-block.dashboardo-block-active .dropdown.dropdown-active .sub-menu-list {
+  display: block !important;
+}
+.dashboardo-block.dashboardo-block-active .dropdown.dropdown-active .sub-menu-list li a {
+  padding-left: 49px;
+padding-right: 12px;
+color: #212121 !important;
 }
 .dashboardo-block.scroller.dashboardo-block-active .das-menu-list ul li.dropdown-active .sub-menu-list {
   display: none;

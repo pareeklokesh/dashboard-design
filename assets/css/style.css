@@ -1235,7 +1235,7 @@ border-right: 1px solid #d5d1d1
   left: inherit;
   right: 5px;
   margin-top: 18px;
-  width: 400px;
+  width: 440px;
 }
 .action-btn.actin-payment-btn .item-3 {
   width: 31.7%;
@@ -1287,7 +1287,7 @@ transform: rotate(-135deg);
   margin-bottom: 15px;
 }
 .action-btn.actin-payment-btn.actin-payment-btn-sc {
-  width: 506px;padding: 0;
+  width: 655px;padding: 0;
 }
 .action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button:last-child {
   margin-bottom: 0;

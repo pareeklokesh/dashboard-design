@@ -1135,7 +1135,7 @@ border-right: 1px solid #d5d1d1
   display: block;
 }
 .dashboardo-block.scroller, .full-page {
-  transition: transform 250ms ease-in-out !important;
+  transition: 250ms ease-in-out !important;
 }
 .sort-active {
   display: none;
@@ -1268,6 +1268,9 @@ height: 30px;
   font-weight: 400;
   font-size: 13px;
 }
+.das-menu-list ul li a, .das-menu-list ul li a span {
+  white-space: nowrap;
+}
 
 
 
@@ -1318,7 +1321,6 @@ height: 30px;
   display: none;
 }
 .dashboardo-block.dashboardo-block-active .das-menu-list ul li a {
-  font-size: 0;
   padding-left: 8px;
   padding-right: 0;
   transition: inherit !important;

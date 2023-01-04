@@ -315,7 +315,7 @@ opacity: 1;filter: inherit;
 }
 .menu-toggle img {
   filter: brightness(0) invert(1);
-  width: 30px;
+  width: 25px;
 }
 .menu-toggle:hover, .menu-toggle {
   background: #2e2e2e;
@@ -995,9 +995,9 @@ border-radius: inherit !important;
 .search-btn {
   cursor: pointer;
 }
-.dashboardo-block.dashboardo-block-active:hover ~ .right-sidebar {
+/*.dashboardo-block.dashboardo-block-active:hover ~ .right-sidebar {
   padding-left: 190px;
-}
+}*/
 .pagination li.disabled a {
   opacity: 0.6;
   cursor: auto;
@@ -1235,10 +1235,10 @@ border-right: 1px solid #d5d1d1
   left: inherit;
   right: 5px;
   margin-top: 18px;
-  width: 428px;
+  width: 400px;
 }
 .action-btn.actin-payment-btn .item-3 {
-  width: 33.3%;
+  width: 31.7%;
   padding: 7px 0px;
 }
 .action-btn.actin-payment-btn button:last-child {
@@ -1273,6 +1273,9 @@ transform: rotate(-135deg);
 .das-menu-list ul li a, .das-menu-list ul li a span {
   white-space: nowrap;
 }
+.action-btn.actin-payment-btn .item-3:nth-child(2) {
+  width: 36.4%;
+}
 
 
 
@@ -1301,26 +1304,26 @@ transform: rotate(-135deg);
 .dashboardo-block.scroller.dashboardo-block-active .das-menu-list ul li.dropdown-active .sub-menu-list {
   display: none;
 }
-.dashboardo-block.scroller.dashboardo-block-active:hover .das-menu-list ul li.dropdown-active .sub-menu-list {
+/*.dashboardo-block.scroller.dashboardo-block-active:hover .das-menu-list ul li.dropdown-active .sub-menu-list {
   display: block;
-}
+}*/
 .dashboardo-block.scroller.dashboardo-block-active:hover .das-menu-list ul li.dropdown-active .sub-menu-list a {
   color: #000;
 }
-.dashboardo-block.dashboardo-block-active:hover {
+/*.dashboardo-block.dashboardo-block-active:hover {
   width: 240px;transition: inherit !important;
-}
-.dashboardo-block.dashboardo-block-active:hover .das-menu-list ul li a {
+}*/
+/*.dashboardo-block.dashboardo-block-active:hover .das-menu-list ul li a {
   display: block;
   padding: 12px 18px;
   font-size: 13px;
-}
-.dashboardo-block.dashboardo-block-active:hover .das-menu-list ul li a span {
+}*/
+/*.dashboardo-block.dashboardo-block-active:hover .das-menu-list ul li a span {
   display: inline-block;
-}
-.dashboardo-block.dashboardo-block-active:hover .das-menu-list ul li a .arrow {
+}*/
+/*.dashboardo-block.dashboardo-block-active:hover .das-menu-list ul li a .arrow {
   display: inline-block;
-}
+}*/
 
 .dashboardo-block.dashboardo-block-active .das-menu-list ul li a .arrow {
   display: none;

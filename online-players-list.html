@@ -1975,7 +1975,6 @@
 <script>
 	$(".action").click(function(){
 		$(this).parent().parent().toggleClass("action-btn-open").siblings().removeClass("action-btn-open");
-		$(".js-dropdown-list").hide();
 	});
 </script>
 <script>
@@ -1997,6 +1996,7 @@ const onMouseUp = e => {
 }
 
 $('.js-link').on('click', () => {
+	$(".online-players-list table tbody tr.action-btn-open").removeClass("action-btn-open");
   $menu.toggleClass('is-active').promise().done(() => {
     if ($menu.hasClass('is-active')) {
       $(document).on('mouseup', onMouseUp) // Only listen for mouseup when menu is active...

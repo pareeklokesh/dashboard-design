@@ -1241,6 +1241,10 @@ border-right: 1px solid #d5d1d1
   top: -5px;border-radius: 5px;
   border-color: #fff;
 }
+.dashboardo-block.scroller.dashboardo-block-active .das-menu-list ul li.dropdown-active a {
+  background: transparent;
+  color: #fff;
+}
 
 
 
@@ -1259,6 +1263,15 @@ border-right: 1px solid #d5d1d1
   .dashboardo-block.dashboardo-block-active {
   transform: inherit;
   width: 50px;
+}
+.dashboardo-block.scroller.dashboardo-block-active .das-menu-list ul li.dropdown-active .sub-menu-list {
+  display: none;
+}
+.dashboardo-block.scroller.dashboardo-block-active:hover .das-menu-list ul li.dropdown-active .sub-menu-list {
+  display: block;
+}
+.dashboardo-block.scroller.dashboardo-block-active:hover .das-menu-list ul li.dropdown-active .sub-menu-list a {
+  color: #000;
 }
 .dashboardo-block.dashboardo-block-active:hover {
   width: 240px;transition: inherit !important;

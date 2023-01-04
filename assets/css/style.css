@@ -1153,6 +1153,94 @@ border-right: 1px solid #d5d1d1
   align-items: center;
   justify-content: center;
 }
+.action-btn.action-btn-setting button {
+  width: 100%;
+  background: #f6f6f6;
+  color: #333;
+}
+.action-btn.action-btn-setting button:first-child {
+  border-radius: 5px 5px 0 0;
+}
+.action-btn.action-btn-setting button:last-child {
+  border-radius: 0px 0px 5px 5px;
+}
+.action-btn.action-btn-setting {
+  width: 150px;
+  box-shadow: 0px 0px 4px #c1c1c1;
+  border-radius: 5px;
+  left: inherit;
+  right: 5px;
+  margin-top: 15px;
+}
+.action-btn.action-btn-setting::before, .action-btn.actin-payment-btn::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #f6f6f6;
+  border-left: 0;
+  border-top: 0;
+  transform: rotate(-136deg);
+  background-color: #f6f6f6;
+  position: absolute;
+  top: -9px;
+  box-shadow: 1px 1px 1px #c1c1c1;
+  right: 40px;
+}
+.action-btn.action-btn-setting button:hover {
+  background: #fff;
+  border-color: #d5d1d1;
+}
+.action-btn.actin-payment-btn button {
+  display: flex;
+  border: 0;
+  width: 100%;
+  align-items: center;
+  background: transparent;
+  color: #000;
+  padding: 0;
+  margin-bottom: 25px;
+}
+.action-btn.actin-payment-btn button span {
+  display: block;
+  font-size: 12px;
+  color: #333;
+}
+.action-btn.actin-payment-btn button p {
+  padding-left: 5px;
+}
+.actin-payment-btn .action-title {
+  color: #595959;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.action-btn.actin-payment-btn {
+  background: #fff;
+  border: 0;
+}
+.action-btn.actin-payment-btn {
+  padding:0px;
+  border-radius: 6px;
+  left: inherit;
+  right: 5px;
+  margin-top: 18px;
+  width: 570px;
+}
+.action-btn.actin-payment-btn .item-3 {
+  width: 33%;
+  padding: 25px 15px;
+}
+.action-btn.actin-payment-btn button:last-child {
+  margin-bottom: 0;
+}
+.action-btn.actin-payment-btn::before {
+  background: #fff;
+  box-shadow: none;
+  top: -5px;border-radius: 5px;
+  border-color: #fff;
+}
 
 
 

@@ -366,7 +366,7 @@ width: 100%;
 float: left;
 }
 .full-page-active {
-  padding-left: 65px;
+  padding-left: 72px;
 }
 body {
   padding-top: 60px;
@@ -918,7 +918,7 @@ margin-left: 0;
 }
 .logo-menu.logo-menu-open .ds-logo {
   overflow: hidden;
-  width: 50px;
+  width: 55px;
   padding-left: 2px;
   font-size: 14px;
 }
@@ -1246,15 +1246,17 @@ border-right: 1px solid #d5d1d1
 }
 .action-btn.actin-payment-btn {
   padding: 0 3px;
+  border: 1px solid #4c3885;
 }
 .action-btn.actin-payment-btn::before {
   background: #fff;
-box-shadow: none;
 top: -11px;
-border-radius: 5px;
 border-color: #fff;
-width: 30px;
-height: 30px;
+width: 25px;
+height: 25px;
+border-radius: 3px;
+box-shadow: 1.5px 1.5px 0px #4c3885;
+transform: rotate(-135deg);
 }
 .dashboardo-block.scroller.dashboardo-block-active .das-menu-list ul li.dropdown-active a {
   background: transparent;
@@ -1265,7 +1267,7 @@ height: 30px;
   color: #333;
 }
 .action-btn.actin-payment-btn button strong {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 13px;
 }
 .das-menu-list ul li a, .das-menu-list ul li a span {
@@ -1286,9 +1288,15 @@ height: 30px;
 
 
 @media (min-width: 992px) {
+  .menu-toggle {
+    pointer-events: none;
+  }
+  .menu-toggle img {
+    pointer-events: auto;
+  }
   .dashboardo-block.dashboardo-block-active {
   transform: inherit;
-  width: 50px;
+  width: 55px;
 }
 .dashboardo-block.scroller.dashboardo-block-active .das-menu-list ul li.dropdown-active .sub-menu-list {
   display: none;
@@ -1321,7 +1329,7 @@ height: 30px;
   display: none;
 }
 .dashboardo-block.dashboardo-block-active .das-menu-list ul li a {
-  padding-left: 8px;
+  padding-left: 18px;
   padding-right: 0;
   transition: inherit !important;
 }

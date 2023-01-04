@@ -1245,6 +1245,10 @@ border-right: 1px solid #d5d1d1
   background: transparent;
   color: #fff;
 }
+.online-players-list table tbody tr td .action i {
+  font-size: 20px;
+  color: #333;
+}
 
 
 

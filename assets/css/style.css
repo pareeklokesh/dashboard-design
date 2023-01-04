@@ -1289,17 +1289,17 @@ margin-bottom: 10px;
 transition: 250ms ease-in-out;
 border-radius: 4px;
 }
-/*.action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button:hover {
+.action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button:hover {
   background: #4c3885;
 border-color: #4c3885;
-} */
+} 
 .action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button:hover, .action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button:hover span {
   color: #fff;
 }
 .action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button{
   position: relative;
 }
-.action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button::before {
+/*.action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button::before {
   background: #4c3885;
   content: "";
   display: block;
@@ -1315,7 +1315,7 @@ border-color: #4c3885;
   width: 100%;
   right: auto;
   left: 0;
-}
+}*/
 .action-btn.actin-payment-btn.actin-payment-btn-sc {
   width: 655px;padding: 0;
 }

@@ -1276,7 +1276,30 @@ transform: rotate(-135deg);
 .action-btn.actin-payment-btn .item-3:nth-child(2) {
   width: 36.4%;
 }
-
+.action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 {
+  width: 33.3% !important;
+  padding: 15px;
+}
+.action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button {
+  background: transparent;
+  color: #000;
+  padding: 0;
+  margin-bottom: 15px;
+}
+.action-btn.actin-payment-btn.actin-payment-btn-sc {
+  width: 506px;padding: 0;
+}
+.action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button:last-child {
+  margin-bottom: 0;
+}
+.action-btn.actin-payment-btn.actin-payment-btn-sc {
+  box-shadow: 0 0 3px #333;
+  border: 0;
+}
+.action-btn.actin-payment-btn.actin-payment-btn-sc::before {
+  box-shadow: 1px 1px 0px #333;
+border-radius: 5px;
+}
 
 
 

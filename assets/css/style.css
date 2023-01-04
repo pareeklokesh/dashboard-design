@@ -1278,13 +1278,43 @@ transform: rotate(-135deg);
 }
 .action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 {
   width: 33.3% !important;
-  padding: 15px;
+  padding: 9px;
 }
 .action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button {
   background: transparent;
   color: #000;
-  padding: 0;
-  margin-bottom: 15px;
+  padding: 5px;
+margin-bottom: 10px;
+
+transition: 250ms ease-in-out;
+border-radius: 4px;
+}
+/*.action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button:hover {
+  background: #4c3885;
+border-color: #4c3885;
+} */
+.action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button:hover, .action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button:hover span {
+  color: #fff;
+}
+.action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button{
+  position: relative;
+}
+.action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button::before {
+  background: #4c3885;
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  transition: 250ms ease-in-out;
+  border-radius: 4px;
+}
+.action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button:hover::before {
+  width: 100%;
+  right: auto;
+  left: 0;
 }
 .action-btn.actin-payment-btn.actin-payment-btn-sc {
   width: 655px;padding: 0;

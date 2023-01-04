@@ -1134,7 +1134,7 @@ border-right: 1px solid #d5d1d1
 .dropdown-admin.is-active .js-dropdown-list {
   display: block;
 }
-.dashboardo-block.scroller, .full-page {
+.dashboardo-block.scroller, .full-page, .dashboardo-block.scroller.dashboardo-block-active, .ds-logo {
   transition: 250ms ease-in-out !important;
 }
 .sort-active {

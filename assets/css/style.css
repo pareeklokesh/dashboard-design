@@ -1213,7 +1213,7 @@ border-right: 1px solid #d5d1d1
 .action-btn.actin-payment-btn button span {
   display: block;
   font-size: 12px;
-  color: #000;
+  color: #333;
 }
 .action-btn.actin-payment-btn button p {
   padding-left: 5px;
@@ -1321,11 +1321,10 @@ border-color: #4c3885;
   margin-bottom: 0;
 }
 .action-btn.actin-payment-btn.actin-payment-btn-sc {
-  box-shadow: 0 0 3px #333;
-  border: 0;
+  border: 1px solid #4c3885;
 }
 .action-btn.actin-payment-btn.actin-payment-btn-sc::before {
-  box-shadow: 1px 1px 0px #333;
+  box-shadow: 1.5px 1.5px 0px #4c3885;
 border-radius: 5px;
 }
 
@@ -1350,23 +1349,7 @@ border-radius: 5px;
   }
   .dashboardo-block.dashboardo-block-active {
   transform: inherit;
-  width: auto;
-min-width: 55px;
-}
-.dashboardo-block.dashboardo-block-active .dropdown.dropdown-active a span, .dashboardo-block.dashboardo-block-active .dropdown.dropdown-active a span.arrow {
-  display: block;
-}
-.dashboardo-block.dashboardo-block-active .dropdown.dropdown-active a {
-  padding-right: 45px;
-  background: #fff !important;color: #212121 !important;
-}
-.dashboardo-block.dashboardo-block-active .dropdown.dropdown-active .sub-menu-list {
-  display: block !important;
-}
-.dashboardo-block.dashboardo-block-active .dropdown.dropdown-active .sub-menu-list li a {
-  padding-left: 49px;
-padding-right: 12px;
-color: #212121 !important;
+  width: 55px;
 }
 .dashboardo-block.scroller.dashboardo-block-active .das-menu-list ul li.dropdown-active .sub-menu-list {
   display: none;

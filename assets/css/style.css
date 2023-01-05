@@ -881,11 +881,11 @@ border: 1px solid #d5d1d1;
 align-items: center;
 justify-content: center;
 }
-.filter-btn button:hover {
+/*.filter-btn button:hover {
   background: #4c3885;
   color: #fff;
   border-color: #4c3885;
-}
+}*/
 .filter-btn {
   margin-left: 10px;
 }

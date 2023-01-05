@@ -261,7 +261,7 @@
 						<img class="sort-unactive" src="assets/img/sort.png" />
 						<img class="sort-active" src="assets/img/sort(2).png">
 					</div></th>
-					<th><div class="d-flex">Action 
+					<th><div class="d-flex"> 
 					</div></th>
 				</tr>
 			</thead>
@@ -2027,6 +2027,7 @@ $('.js-link').on('click', () => {
 	$("#search-filter-btn").click(function(){
 		$("#search-filter").toggleClass("filter-item-open");
 		$("#filter-filter").removeClass("filter-item-open");
+		$(".filter-btn").toggleClass("filter-btn-mb");
 	});
 </script>
 <script>
@@ -2034,6 +2035,7 @@ $('.js-link').on('click', () => {
 		$("#search-filter").removeClass("filter-item-open");
 		$("#filter-filter").toggleClass("filter-item-open");
 		$(this).toggleClass("filter-btn-active");
+		$(".filter-btn").removeClass("filter-btn-mb");
 	});
 </script>
 <script>

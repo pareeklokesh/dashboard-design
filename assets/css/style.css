@@ -1291,7 +1291,7 @@ border-radius: 4px;
   background: #4c3885;
 border-color: #4c3885;
 } 
-.action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button:hover, .action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button:hover span {
+.action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button:hover, .action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button:hover span, .action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button:hover strong {
   color: #fff;
 }
 .action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 button{
@@ -1324,10 +1324,10 @@ border-color: #4c3885;
   border: 1px solid #4c3885;
 }
 .action-btn.actin-payment-btn.actin-payment-btn-sc::before {
-  box-shadow: 1.5px 1.5px 0px #4c3885;
+  box-shadow: 1.4px 1.4px 0px #4c3885;
 border-radius: 5px;
+top: -10px;
 }
-
 
 
 
@@ -1396,6 +1396,41 @@ border-radius: 5px;
 }
 .dashboardo-block.dashboardo-block-active:hover {
   transition: all 0s linear !important;
+}
+.dashboardo-block.dashboardo-block-active .nav-link {
+  position: relative;
+}
+.dashboardo-block.dashboardo-block-active .nav-link:hover a span {
+  display: block !important;
+  position: absolute;
+  right: -178px;
+  background: #fff;
+  padding: 12px 18px;
+  color: #000;
+  min-width: 178px;
+}
+.dashboardo-block.dashboardo-block-active .nav-link:hover a span.arrow {
+  background: transparent;
+  min-width: auto;
+  padding-left: 3px;
+  padding-right: 15px;
+transform: rotate(89deg);
+}
+.dashboardo-block.dashboardo-block-active .nav-link:hover .sub-menu-list {
+  display: block;
+  position: absolute;
+  right: -178px;
+  min-width: 178px;
+  background: #fff;
+}
+.dashboardo-block.dashboardo-block-active .das-menu-list ul li, .dashboardo-block.scroller.dashboardo-block-active {
+  overflow: inherit;
+}
+.dashboardo-block.scroller.dashboardo-block-active .das-menu-list ul li.dropdown-active:hover .sub-menu-list {
+  display: block !important;
+}
+.dashboardo-block.scroller.dashboardo-block-active {
+  border: 0;
 }
 
 }

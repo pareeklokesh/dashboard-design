@@ -1325,6 +1325,13 @@ border-color: #4c3885;
 border-radius: 5px;
 top: -10px;
 }
+.close-menu, .menu-toggle-active .active-menu-open {
+  display: none;
+}
+.menu-toggle-active .close-menu {
+  display: block;
+  width: 18px;
+}
 
 
 
@@ -1574,7 +1581,7 @@ body {
 .filter-item.filter-item-open ~ button {
   margin-top: -16px;
   position: relative;
-  top: -7px;
+  top: -3px;
 }
 .table-filter select {
   min-width: 47% !important;
@@ -1585,6 +1592,19 @@ body {
 #filter-filter.filter-item-open {
   display: flex;
   flex-wrap: wrap;
+}
+.online-players-list table thead th, .online-players-list  tr td, .online-players-list  tr td a {
+  white-space: nowrap;
+}
+.action-th-mb {
+  position: sticky;
+  right: 0;
+  z-index: 1;
+  border: 1px solid #969799;
+  background: #fff;
+}
+.header-wrapper .logo-menu .ds-logo {
+  order: 2;
 }
 
 

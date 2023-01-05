@@ -1403,11 +1403,11 @@ top: -10px;
 .dashboardo-block.dashboardo-block-active .dropdown-active a span {
   display: block !important;
   position: absolute;
-  right: -185px;
+  right: -200px;
   background: #fff;
   padding: 12px 18px;
   color: #000;
-  min-width: 185px;
+  min-width: 200px;
 }
 .dashboardo-block.dashboardo-block-active .dropdown-active a span.arrow {
   background: transparent;
@@ -1418,8 +1418,8 @@ top: -10px;
 .dashboardo-block.dashboardo-block-active .dropdown-active .sub-menu-list {
   display: block;
   position: absolute;
-  right: -185px;
-  min-width: 185px;
+  right: -200px;
+  min-width: 200px;
   background: #fff;
 }
 .dashboardo-block.dashboardo-block-active .das-menu-list ul li, .dashboardo-block.scroller.dashboardo-block-active {
@@ -1440,7 +1440,7 @@ top: -10px;
   color: #fff !important;
 }
 .dashboardo-block.dashboardo-block-active .nav-link.dropdown-active .sub-menu-list a {
-  padding-left: 25px;
+  padding-left: 30px;
 }
 
 }

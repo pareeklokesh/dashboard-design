@@ -478,7 +478,8 @@ padding: 0;
   font-weight: 600;
   padding: 15px 17px;
   margin-right: 6px;
-  width: 239px;
+  margin-right: 0;
+width: 200px;
   text-align: center;
 }
 .menu-toggle {
@@ -1349,6 +1350,9 @@ border-right: 0;
 .table-search.table-search-in {
   outline: none;
 }
+.menu-toggle {
+  margin: 0;
+}
 
 
 
@@ -1508,7 +1512,7 @@ border-right: 0;
   background: #2e2e2e;
 }
 .ds-logo {
-  width: 50px;
+  width: 55px;
 }
 .das-title h1 {
   font-size: 16px;
@@ -1516,6 +1520,12 @@ border-right: 0;
 .online-players-list {
   overflow: scroll;
   padding-bottom: 15px;
+}
+.dashboardo-block.dashboardo-block-active {
+  transform: translateX(-260%);
+}
+.dashboardo-block {
+  transform: translateX(0%);
 }
 
 

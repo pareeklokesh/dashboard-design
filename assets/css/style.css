@@ -1612,5 +1612,15 @@ td, th {
 .filter-btn button {
   transition: 0s linear;
 }
+.filter-btn-mb {
+  width: 100%;
+  margin-left: 0;
+}
+#filter-filter select:first-child, #filter-filter select:nth-child(3) {
+    margin-left: 0;
+}
+.table-filter select {
+    min-width: 48.5% !important;
+}
 
 }

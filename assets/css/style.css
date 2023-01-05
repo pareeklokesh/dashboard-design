@@ -1338,6 +1338,21 @@ top: -10px;
 
 
 @media (min-width: 992px) {
+  .logo-menu.logo-menu-open .ds-logo {
+  width: 0;
+  padding: 0;
+  margin: 0 !important;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.logo-menu.logo-menu-open .ds-logo {
+  transition: 250ms ease-in-out;
+}
+.menu-toggle.menu-toggle-active {
+  position: relative;
+  left: 3px;
+}
   .dashboardo-block.scroller.dashboardo-block-active .das-menu-list ul li.dropdown-active a {
   background: transparent;
   color: #fff;

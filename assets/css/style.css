@@ -1335,7 +1335,17 @@ top: -10px;
 .menu-toggle-active .active-menu-open {
   display: block;
 }
-
+.online-players-list table  tr td, .online-players-list table  tr th {
+  border-bottom: 0;
+border-right: 0;
+}
+.online-players-list table  tr td:last-child, .online-players-list table  tr th:last-child {
+  border-right: 1px solid #969799;
+}
+.online-players-list .data-table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
 
 
 

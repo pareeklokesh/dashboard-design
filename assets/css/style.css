@@ -1530,6 +1530,7 @@ border-right: 0;
 
 
 
+
 }
 
 @media (max-width: 767px) {
@@ -1631,6 +1632,21 @@ body {
 }
 .header-wrapper .logo-menu .ds-logo {
   order: 2;
+}
+.action-btn.action-btn-setting::before, .action-btn.actin-payment-btn::before {
+  right: -7px;
+  transform: rotate(-47deg);
+  top: 3px;
+}
+.action-btn {
+  right: 55px !important;
+}
+.action-btn.actin-payment-btn::before {
+  right: -10px;
+  top: 6px;
+}
+.action-btn.actin-payment-btn.actin-payment-btn-sc::before {
+  top: 4px;
 }
 
 

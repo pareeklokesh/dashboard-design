@@ -1346,6 +1346,9 @@ border-right: 0;
   border-collapse: separate;
   border-spacing: 0;
 }
+.table-search.table-search-in {
+  outline: none;
+}
 
 
 

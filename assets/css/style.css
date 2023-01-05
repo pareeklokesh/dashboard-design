@@ -1258,10 +1258,7 @@ border-radius: 3px;
 box-shadow: 1.5px 1.5px 0px #4c3885;
 transform: rotate(-135deg);
 }
-.dashboardo-block.scroller.dashboardo-block-active .das-menu-list ul li.dropdown-active a {
-  background: transparent;
-  color: #fff;
-}
+
 .online-players-list table tbody tr td .action i {
   font-size: 20px;
   color: #333;
@@ -1341,6 +1338,10 @@ top: -10px;
 
 
 @media (min-width: 992px) {
+  .dashboardo-block.scroller.dashboardo-block-active .das-menu-list ul li.dropdown-active a {
+  background: transparent;
+  color: #fff;
+}
   .menu-toggle {
     pointer-events: none;
   }
@@ -1581,4 +1582,35 @@ body {
   margin-top: 10px;
   justify-content: end;
 }
+.action-btn {
+  width: 168px;
+}
+.action-btn button {
+  width: 100%;border-radius: 0;
+}
+.action-btn.action-btn-setting {
+  width: 140px;
+}
+.action-btn.actin-payment-btn .item-3, .action-btn.actin-payment-btn.actin-payment-btn-sc .item-3 {
+  width: 100% !important;
+}
+.action-btn.actin-payment-btn {width: 160px;}
+.action-btn.actin-payment-btn.actin-payment-btn-sc {
+  width: 221px;
+}
+td, th {
+  font-size: 13px;
+}
+.online-players-list table thead th {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.online-players-list table thead th:first-child {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.filter-btn button {
+  transition: 0s linear;
+}
+
 }

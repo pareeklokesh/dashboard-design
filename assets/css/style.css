@@ -1343,6 +1343,9 @@ border-right: 0;
 .online-players-list table  tr td:last-child, .online-players-list table  tr th:last-child {
   border-right: 1px solid #969799;
 }
+.online-players-list table {
+  border-bottom: 1px solid #969799;
+}
 .online-players-list .data-table {
   border-collapse: separate;
   border-spacing: 0;
@@ -1352,6 +1355,9 @@ border-right: 0;
 }
 .menu-toggle {
   margin: 0;
+}
+.ds-logo {
+  background: transparent;
 }
 
 

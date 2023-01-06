@@ -881,11 +881,11 @@ border: 1px solid #d5d1d1;
 align-items: center;
 justify-content: center;
 }
-/*.filter-btn button:hover {
+.filter-btn button:hover {
   background: #4c3885;
   color: #fff;
   border-color: #4c3885;
-}*/
+}
 .filter-btn {
   margin-left: 10px;
 }
@@ -1543,6 +1543,12 @@ border-right: 0;
   .filter-btn button {
   width: 25px;
   height: 25px;
+}
+.filter-btn button:hover {
+  background: #fff;
+  opacity: 1;
+  color: #000;
+  border-color: #d5d1d1;
 }
   .dashboard-list li {
   width: 31%;

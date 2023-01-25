@@ -1399,6 +1399,10 @@ border-right: 0;
   color: #ffa500;
   border-color: #f00;
 }
+.add-game-btn {
+  font-size: 14px;
+  margin-right: 15px;
+}
 
 
 

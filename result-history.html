@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header-wrapper">
+			<div class="logo-menu logo-menu-open">
+				
+				<a href="#" class="ds-logo">
+					Dashboard
+				</a>
+				<button class="menu-toggle menu-toggle-active">
+					<img class="active-menu-open" src="assets/img/toggle-bar.png" />
+					<img class="close-menu" src="assets/img/close.png" />
+					
+				</button>
+				<a href="#" style="color: #fff;margin-left: 5px;"><i class="fa fa-user-plus"></i></a>
+			</div>
+			<div class="status-game">
+				<div class="dropdown dropdown-admin">
+  <a href="#" class="js-link">Admin <i class="fa fa-chevron-down"></i></a>
+  <ul class="js-dropdown-list">
+    <li><i class="fa fa-user"></i> My Account</li>
+    <li><i class="fa fa-lock"></i> Update Security</li>
+    <li><i class="fa fa-money" aria-hidden="true"></i> Generate Amount</li>
+    <li><i class="fa fa-file"></i> Set Landing Page</li>
+    <li><i class="fa fa-sign-out fa-fw"></i> Logout</li>
+  </ul>
+</div>
+				
+			</div>
+		</div>
+	</header>
+<div class="full-page full-page-active">
+
+
+<!-- Left Side Menu -->
+
+<div class="dashboardo-block scroller dashboardo-block-active">
+	<div class="das-menu">
+		
+		<div class="das-menu-list">
+			<ul>
+				<li class="nav-link">
+					<a href="index.html"><i class="fa fa fa-dashboard" title="Dashboard"></i><span>Dashboard</span></a>
+				</li>
+				<li class="dropdown nav-link">
+					<a href="javascript:void(0)"><i class="fa fa fa-users" title="Live Players"></i><span>Live Players</span> <span class="arrow"><img src="assets/img/right.png" width="8" /></span></a>
+					<ul class="sub-menu-list">
+						<li>
+							<a href="#">Bot Status</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown nav-link">
+					<a href="javascript:void(0)"><i class="fa fa fa-tasks" title="Game Management"></i><span>Game Management</span>
+					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
+					</a>
+					<ul class="sub-menu-list">
+						<li>
+							<a href="#">Poker Table</a>
+						</li>
+						<li>
+							<a href="#">Rummy Table</a>
+						</li>
+						<li>
+							<a href="#">Call Break Table</a>
+						</li>
+						<li>
+							<a href="#">Ludo Table</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-link">
+					<a href="#"><i class="fa fa fa-history" title="Game History"></i><span>Game History</span>
+					</a>
+				</li>
+				<li class="dropdown nav-link">
+					<a href="javascript:void(0)"><i class="fa fa fa-user"></i><span>Player Management</span>
+					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
+					</a>
+					<ul class="sub-menu-list">
+						<li>
+							<a href="online-players-list.html" class="active">Online Players List</a>
+						</li>
+						<li>
+							<a href="#">Bank Details</a>
+						</li>
+						<li>
+							<a href="#">Player Kyc</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-link">
+					<a href="#"><i class="fa fa fa-male" title="Affiliate Management"></i><span>Affiliate Management</span>
+					</a>
+				</li>
+				<li class="dropdown nav-link">
+					<a href="javascript:void(0)"><i class="fa fa fa-money" title="Finance"></i><span>Finance</span>
+					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
+					</a>
+					<ul class="sub-menu-list">
+						<li>
+							<a href="#">Send Out</a>
+						</li>
+						<li>
+							<a href="#">Deposit transactions</a>
+						</li>
+						<li>
+							<a href="#">Claim Back</a>
+						</li>
+						<li>
+							<a href="#">Cashin vs Cashout</a>
+						</li>
+						<li>
+							<a href="#">Withdrawal Transaction</a>
+						</li>
+						<li>
+							<a href="#">Withdrawal Request</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown nav-link">
+					<a href="javascript:void(0)"><i class="fa fa-money" title="Manage Campaign"></i><span>Manage Campaign</span>
+					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
+					</a>
+					<ul class="sub-menu-list">
+						<li>
+							<a href="#">Banner</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown nav-link">
+					<a href="javascript:void(0)"><i class="fa fa-fighter-jet" title="Manage Bots"></i><span>Manage Bots</span>
+					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
+					</a>
+					<ul class="sub-menu-list">
+						<li>
+							<a href="#">Poker AI Rules</a>
+						</li>
+						<li>
+							<a href="#">Bots Management</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown nav-link">
+					<a href="javascript:void(0)"><i class="fa fa fa-users" title="HR Management"></i><span>HR Management</span>
+					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
+					</a>
+					<ul class="sub-menu-list">
+						<li>
+							<a href="#">Role Management</a>
+						</li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+
+		
+
+	</div>
+	<div class="das-footer">
+		
+	</div>
+</div>
+
+
+
+	<div class="loader-line"></div>
+	<!-- <div class="refresh">
+		<button class="refresh-btn"> <img src="assets/img/refresh.png" /></button>
+	</div> -->
+	<div class="right-sidebar">
+	<div class="das-bg-block w-100" style="display:block;">
+		<div class="flex-wrap" style="display: flex;justify-content: space-between;align-items: center;">
+		<div class="das-title">
+			<h1>Result History</h1>
+		</div>
+		<div class="filter-btn" style="display: flex;">
+			<div class="filter-item" id="search-filter" style="margin-right: 15px;">
+			<input type="text" placeholder="Search..." name="" class="table-search table-search-in" />
+			<button class="search-btn"><i class="fa fa-search"></i></button>
+		</div>
+			<button class="" id="search-filter-btn" style="margin-right:10px;"><i class="fa fa-search"></i></button>
+			<button id="filter-filter-btn">
+				<i class="fa fa-filter"></i>
+				<!-- <img src="assets/img/filter.png" class="deactive-filter" />
+				<img src="assets/img/filter(1).png" class="active-filter" /> -->
+			</button>
+		</div>	
+		</div>
+		<div class="w-100 table-filter" style="margin-top: 0px;">
+	
+	<div class="filter-item" id="filter-filter">
+			<select style="margin-top: 1px;">
+			<option>Lorem Ipsum</option>
+			<option>Lorem Ipsum</option>
+		</select>
+		<select style="margin-top: 1px;">
+			<option>Lorem Ipsum</option>
+			<option>Lorem Ipsum</option>
+		</select>
+		<input type="date" name="" style="margin:0 8px;">
+		<input type="date" name="" style="">
+		</div>
+	</div>
+
+	</div>
+	
+	
+
+	<div class="w-100 online-players-list" style="height: inherit;">
+      	<table class="data-table table">
+      		<thead>
+      			<tr>
+      				<th>S.NO.</th>
+      				<th>Date</th>
+      				<th>Game</th>
+      				<th>Result</th>
+      				<th>Session</th>
+      			</tr>
+      		</thead>
+      		<tbody>
+      			<tr>
+      				<td>1</td>
+      				<td>2023-01-24 15:07:33</td>
+      				<td>12 Cards Joker Mobile</td>
+      				<td>J❤</td>
+      				<td>1000254</td>
+      			</tr>
+      			<tr>
+      				<td>2</td>
+      				<td>2023-01-24 15:07:33</td>
+      				<td>12 Cards Joker Mobile</td>
+      				<td>J❤</td>
+      				<td>1000254</td>
+      			</tr>
+      			<tr>
+      				<td>3</td>
+      				<td>2023-01-24 15:07:33</td>
+      				<td>12 Cards Joker Mobile</td>
+      				<td>J❤</td>
+      				<td>1000254</td>
+      			</tr>
+      			<tr>
+      				<td>4</td>
+      				<td>2023-01-24 15:07:33</td>
+      				<td>12 Cards Joker Mobile</td>
+      				<td>J❤</td>
+      				<td>1000254</td>
+      			</tr>
+      			<tr>
+      				<td>5</td>
+      				<td>2023-01-24 15:07:33</td>
+      				<td>12 Cards Joker Mobile</td>
+      				<td>J❤</td>
+      				<td>1000254</td>
+      			</tr>
+      			<tr>
+      				<td>6</td>
+      				<td>2023-01-24 15:07:33</td>
+      				<td>12 Cards Joker Mobile</td>
+      				<td>J❤</td>
+      				<td>1000254</td>
+      			</tr>
+      		</tbody>
+      		<!-- <tfoot>
+      			<tr>
+      				<td colspan="8" style="text-align: center;"></td>
+      				<td>Total</td>
+      				<td><strong>0.00</strong></td>
+      			</tr>
+      		</tfoot> -->
+      	</table>
+      </div>
+	
+</div>
+</div>
+
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+
+<script>
+  $(".dropdown").click(function(){
+    $(this).toggleClass("dropdown-active").siblings().removeClass("dropdown-active");
+    //$(this).next(".sub-menu-list").toggleClass("sub_menu_active");
+  });
+</script>
+<script>
+	
+	$(".menu-toggle").click(function(){
+		$(this).toggleClass('menu-toggle-active');
+    $(".dashboardo-block").toggleClass("dashboardo-block-active");
+    $(".full-page").toggleClass("full-page-active");
+    $(".logo-menu").toggleClass("logo-menu-open");
+  });
+</script>
+
+<script>
+$('.tabs-stage div:first').show();
+$('.tabs-nav li:first').addClass('tab-active');
+
+
+$('.tabs-nav a').on('click', function(event){
+  event.preventDefault();
+  $('.tabs-nav li').removeClass('tab-active');
+  $(this).parent().addClass('tab-active');
+  $('.tabs-stage .tab-content').hide();
+  $($(this).attr('href')).show();
+});
+</script>
+
+<script>
+	$(function() {
+  var list = $('.js-dropdown-list');
+  var link = $('.js-link');
+  link.click(function(e) {
+    e.preventDefault();
+    list.slideToggle(200);
+  });
+  list.find('li').click(function() {
+    //var text = $(this).html();
+    //var icon = '<i class="fa fa-chevron-down"></i>';
+    //link.html(text+icon);
+    list.slideToggle(200);
+    
+  });
+});
+</script>
+<script>
+	$("#search-filter-btn").click(function(){
+		$("#search-filter").toggleClass("filter-item-open");
+		$("#filter-filter").removeClass("filter-item-open");
+		$(".filter-btn").toggleClass("filter-btn-mb");
+	});
+</script>
+<script>
+	$("#filter-filter-btn").click(function(){
+		$("#search-filter").removeClass("filter-item-open");
+		$("#filter-filter").toggleClass("filter-item-open");
+		$(this).toggleClass("filter-btn-active");
+		$(".filter-btn").removeClass("filter-btn-mb");
+	});
+</script>
+
+</body>
+</html>

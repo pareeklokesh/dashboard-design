@@ -1384,6 +1384,21 @@ border-right: 0;
 .logo-menu.logo-menu-open .logo-dash-close {
   display: block;
 }
+.online-btn {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  background: #00a65a;
+  border: 1px solid #00a65a;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #008914;
+}
+.offline-btn {
+  background: #f00;
+  color: #ffa500;
+  border-color: #f00;
+}
 
 
 

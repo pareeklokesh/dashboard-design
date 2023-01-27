@@ -306,7 +306,7 @@
 					</div>
 				</div>
 				<div class="w-50">
-					<div class="form-group">   
+					<div class="form-group getTimes hidden">   
 						<span class="">Device count for player login</span>
 						<input type="text" class="form-control" name="">
 					</div>
@@ -607,6 +607,16 @@ $('.tabs-nav a').on('click', function(event){
 		$(this).toggleClass("filter-btn-active");
 		$(".filter-btn").removeClass("filter-btn-mb");
 	});
+</script>
+
+<script>
+	$('#switch:checkbox').change(function(){
+    if($(this).is(":checked")) {
+        $('.getTimes').removeClass("hidden");
+    } else {
+        $('.getTimes').addClass("hidden");
+    }
+});
 </script>
 
 </body>

@@ -1410,7 +1410,7 @@ border-right: 0;
 .action-btn-game button {
   width: 100%;
 }
-.game-all-btn, .table-btn, .ok-cancel-btn {
+.game-all-btn, .table-btn, .ok-cancel-btn, .clear_new button {
   padding: 8px 9px;
   font-size: 12px;
   text-transform: uppercase;
@@ -1430,7 +1430,7 @@ border-right: 0;
   font-size: 14px;
   margin-right: 15px;
 }
-.game-all-btn:hover, .table-btn:hover, .ok-cancel-btn:hover {
+.game-all-btn:hover, .table-btn:hover, .ok-cancel-btn:hover, .clear_new button:hover {
   background: #4c3885;
   border-color: #4c3885;
   color: #fff;
@@ -1467,6 +1467,59 @@ margin-top: 2px
 .ok-cancel-btn {
   margin-right: 10px;
 }
+.main_block_form .w-50 {
+  width: 50%;
+  padding: 0 10px;
+}
+.main_block_form span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.main_block_form .form-control {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #d5d1d1;
+  padding: 8px 8px;
+  font-size: 14px;
+}
+.main_block_form .form-group {
+  margin-bottom: 10px;
+}
+.main_block_form {
+  background: #fff;
+  padding: 15px 10px 10px 10px;
+  margin-top: 20px;
+}
+.fieldset-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 2%;
+}
+.fieldset-row .main_block_form {
+  width: 49%;
+  margin-top: 0;
+  height: 100%;
+  float: left;
+}
+.game-all-setting .form-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+.main_block_form legend {
+  font-size: 16px;
+  padding: 0 8px;
+}
+.clear_new {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+} 
 
 
 

@@ -1,6 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif !important;
-  background: #eceff4;
+  background: #eceff4 !important;
 }
 * {
   box-sizing: border-box;
@@ -624,8 +624,8 @@ table {
   width: 100%;
 }
 td, th {
-  border: 1px solid #969799;
-  padding: 5px;
+  border: 1px solid #969799 !important;
+  padding: 5px !important;
   font-size: 14px;
   color: #676767;
 }
@@ -1341,14 +1341,14 @@ top: -10px;
   display: block;
 }
 .online-players-list table  tr td, .online-players-list table  tr th {
-  border-bottom: 0;
-border-right: 0;
+  border-bottom: 0 !important;
+border-right: 0 !important;
 }
 .online-players-list table  tr td:last-child, .online-players-list table  tr th:last-child {
-  border-right: 1px solid #969799;
+  border-right: 1px solid #969799 !important;
 }
 .online-players-list table {
-  border-bottom: 1px solid #969799;
+  border-bottom: 1px solid #969799 !important;
 }
 .online-players-list .data-table {
   border-collapse: separate;
@@ -1584,6 +1584,114 @@ margin-top: 2px
   align-items: center;
   justify-content: space-between;
 }
+.dashboardo-block .das-menu-list ul li, .dashboardo-block .das-menu-list ul li.nav-link {
+  padding: 0;
+}
+.dashboardo-block .das-menu-list ul {
+  padding-left: 0;
+  list-style: none;
+}
+.advance-form label {
+  font-size: 14px;
+}
+.advance-form .row {
+  margin-bottom: 10px;
+}
+.advance-form span {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.advance-form .form-control {
+  font-size: 14px;
+}
+.advance-form .btn {
+  font-size: 14px;
+}
+.profile_photo_edit_pic {
+  margin-bottom: 20px;
+}
+.profile_photo_edit_pic {
+  background: #dedede none repeat scroll 0 0;
+  color: #666;
+  border: 1px solid #cecece;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 6px 20px;
+  position: relative;
+  text-decoration: none;
+}
+.file-upload-button {
+  background: none repeat scroll 0 0 hsl(0, 0%, 100%);
+  cursor: pointer;
+  height: 30px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  display: block;
+}
+.modal {
+  z-index: 9999999 !important;
+}
+.advance-form .nav.nav-tabs li button {
+  font-size: 14px;
+  padding: 10px 9px;
+  color: #000;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider.round {
+  border-radius: 34px;
+}
+.sm-slider {
+  left: -15px !important;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider.round::before {
+  border-radius: 50%;
+}
+.sm-slider::before {
+  height: 10px !important;
+  width: 10px !important;
+  left: 5px !important;
+  bottom: 5px !important;
+}
+.checkbox, .radio {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.advance-form .nav.nav-tabs {
+  margin-bottom: 20px;
+}
+a {
+  cursor: pointer;
+}
+
+
+
 
 
 

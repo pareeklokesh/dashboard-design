@@ -6,6 +6,8 @@
 	<title>Dashboard</title>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <style>
 	.online-players-list table thead th {
@@ -191,7 +193,7 @@
 		</div>
 		<div class="game-btn-top">
 			<span class="total-content">Total Games: 61</span>
-			<button class="game-all-btn">Advanced Setting</button>
+			<button class="game-all-btn" data-bs-toggle="modal" data-bs-target="#advancedSetting">Advanced Setting</button>
 			<button class="game-all-btn">Publish</button>
 			<button class="game-all-btn" style="margin-right:0;"><<</button>
 		</div>	
@@ -230,7 +232,7 @@
                   <th>Status</th>
                   <th>Lock</th>
                   <th>Status</th>
-                  <th style="border-right: 0;">Lock</th>
+                  <th style="border-right: 0 !important;">Lock</th>
                 </tr>
       		</thead>
       		<tbody>
@@ -244,19 +246,19 @@
       			<td>Casino_Lobby</td>
       			<td>Lobby</td>
       			<td>-</td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame"><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
       			<td>V17</td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/category_images/image (7).png" width="50" height="50"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin//theme/52casino/game_images/12cardspc.png" width="80" height="45"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/game_images/V17/12cardspc.png" width="80" height="50"></td>
       			<td><button class="action" style="border: 0;background: transparent;"><i class="fa fa-gear"></i></button>
       			<div class="action-btn action-btn-game">
-							<button><i class="fa fa-pencil"></i> Configure Game</button>
-							<button><i class="fa fa-gear"></i> Game Setting</button>
-							<button><i class="fa fa-user"></i> Common Setting</button>
+							<button data-bs-toggle="modal" data-bs-target="#editGame"><i class="fa fa-pencil"></i> Configure Game</button>
+							<button  data-bs-toggle="modal" data-bs-target="#gameSetting"><i class="fa fa-gear"></i> Game Setting</button>
+							<button  data-bs-toggle="modal" data-bs-target="#commonSetting"><i class="fa fa-user"></i> Common Setting</button>
 						</div>
 					</td>
       		</tr>
@@ -270,51 +272,22 @@
       			<td>Casino_Lobby</td>
       			<td>Lobby</td>
       			<td>-</td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
-      			<td>V17</td>
-      			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/category_images/image (7).png" width="50" height="50"></td>
-      			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin//theme/52casino/game_images/12cardspc.png" width="80" height="45"></td>
-      			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/game_images/V17/12cardspc.png" width="80" height="50"></td>
-      			<td>
-      				<button class="action" style="border: 0;background: transparent;"><i class="fa fa-gear"></i></button>
-      				<div class="action-btn action-btn-game">
-							<button><i class="fa fa-pencil"></i> Configure Game</button>
-							<button><i class="fa fa-gear"></i> Game Setting</button>
-							<button><i class="fa fa-user"></i> Common Setting</button>
-						</div>
-
-      			</td>
-      		</tr>
-      		<tr>
-      			<td>Draw</td>
-      			<td>12 Cards Joker PC</td>
-      			<td>52.221.186.43</td>
-      			<td>9933</td>
-      			<td></td>
-      			<td>8080</td>
-      			<td>Casino_Lobby</td>
-      			<td>Lobby</td>
-      			<td>-</td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame"><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
       			<td>V17</td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/category_images/image (7).png" width="50" height="50"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin//theme/52casino/game_images/12cardspc.png" width="80" height="45"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/game_images/V17/12cardspc.png" width="80" height="50"></td>
       			<td><button class="action" style="border: 0;background: transparent;"><i class="fa fa-gear"></i></button>
       			<div class="action-btn action-btn-game">
-							<button><i class="fa fa-pencil"></i> Configure Game</button>
-							<button><i class="fa fa-gear"></i> Game Setting</button>
-							<button><i class="fa fa-user"></i> Common Setting</button>
+							<button data-bs-toggle="modal" data-bs-target="#editGame"><i class="fa fa-pencil"></i> Configure Game</button>
+							<button  data-bs-toggle="modal" data-bs-target="#gameSetting"><i class="fa fa-gear"></i> Game Setting</button>
+							<button  data-bs-toggle="modal" data-bs-target="#commonSetting"><i class="fa fa-user"></i> Common Setting</button>
 						</div>
 					</td>
-      		</tr>
-      		<tr>
+      		</tr><tr>
       			<td>Draw</td>
       			<td>12 Cards Joker PC</td>
       			<td>52.221.186.43</td>
@@ -324,23 +297,22 @@
       			<td>Casino_Lobby</td>
       			<td>Lobby</td>
       			<td>-</td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame"><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
       			<td>V17</td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/category_images/image (7).png" width="50" height="50"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin//theme/52casino/game_images/12cardspc.png" width="80" height="45"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/game_images/V17/12cardspc.png" width="80" height="50"></td>
       			<td><button class="action" style="border: 0;background: transparent;"><i class="fa fa-gear"></i></button>
       			<div class="action-btn action-btn-game">
-							<button><i class="fa fa-pencil"></i> Configure Game</button>
-							<button><i class="fa fa-gear"></i> Game Setting</button>
-							<button><i class="fa fa-user"></i> Common Setting</button>
+							<button data-bs-toggle="modal" data-bs-target="#editGame"><i class="fa fa-pencil"></i> Configure Game</button>
+							<button  data-bs-toggle="modal" data-bs-target="#gameSetting"><i class="fa fa-gear"></i> Game Setting</button>
+							<button  data-bs-toggle="modal" data-bs-target="#commonSetting"><i class="fa fa-user"></i> Common Setting</button>
 						</div>
 					</td>
-      		</tr>
-      		<tr>
+      		</tr><tr>
       			<td>Draw</td>
       			<td>12 Cards Joker PC</td>
       			<td>52.221.186.43</td>
@@ -350,23 +322,22 @@
       			<td>Casino_Lobby</td>
       			<td>Lobby</td>
       			<td>-</td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame"><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
       			<td>V17</td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/category_images/image (7).png" width="50" height="50"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin//theme/52casino/game_images/12cardspc.png" width="80" height="45"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/game_images/V17/12cardspc.png" width="80" height="50"></td>
       			<td><button class="action" style="border: 0;background: transparent;"><i class="fa fa-gear"></i></button>
       			<div class="action-btn action-btn-game">
-							<button><i class="fa fa-pencil"></i> Configure Game</button>
-							<button><i class="fa fa-gear"></i> Game Setting</button>
-							<button><i class="fa fa-user"></i> Common Setting</button>
+							<button data-bs-toggle="modal" data-bs-target="#editGame"><i class="fa fa-pencil"></i> Configure Game</button>
+							<button  data-bs-toggle="modal" data-bs-target="#gameSetting"><i class="fa fa-gear"></i> Game Setting</button>
+							<button  data-bs-toggle="modal" data-bs-target="#commonSetting"><i class="fa fa-user"></i> Common Setting</button>
 						</div>
 					</td>
-      		</tr>
-      		<tr>
+      		</tr><tr>
       			<td>Draw</td>
       			<td>12 Cards Joker PC</td>
       			<td>52.221.186.43</td>
@@ -376,23 +347,22 @@
       			<td>Casino_Lobby</td>
       			<td>Lobby</td>
       			<td>-</td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame"><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
       			<td>V17</td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/category_images/image (7).png" width="50" height="50"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin//theme/52casino/game_images/12cardspc.png" width="80" height="45"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/game_images/V17/12cardspc.png" width="80" height="50"></td>
       			<td><button class="action" style="border: 0;background: transparent;"><i class="fa fa-gear"></i></button>
       			<div class="action-btn action-btn-game">
-							<button><i class="fa fa-pencil"></i> Configure Game</button>
-							<button><i class="fa fa-gear"></i> Game Setting</button>
-							<button><i class="fa fa-user"></i> Common Setting</button>
+							<button data-bs-toggle="modal" data-bs-target="#editGame"><i class="fa fa-pencil"></i> Configure Game</button>
+							<button  data-bs-toggle="modal" data-bs-target="#gameSetting"><i class="fa fa-gear"></i> Game Setting</button>
+							<button  data-bs-toggle="modal" data-bs-target="#commonSetting"><i class="fa fa-user"></i> Common Setting</button>
 						</div>
 					</td>
-      		</tr>
-      		<tr>
+      		</tr><tr>
       			<td>Draw</td>
       			<td>12 Cards Joker PC</td>
       			<td>52.221.186.43</td>
@@ -402,23 +372,22 @@
       			<td>Casino_Lobby</td>
       			<td>Lobby</td>
       			<td>-</td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame"><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
       			<td>V17</td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/category_images/image (7).png" width="50" height="50"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin//theme/52casino/game_images/12cardspc.png" width="80" height="45"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/game_images/V17/12cardspc.png" width="80" height="50"></td>
       			<td><button class="action" style="border: 0;background: transparent;"><i class="fa fa-gear"></i></button>
       			<div class="action-btn action-btn-game">
-							<button><i class="fa fa-pencil"></i> Configure Game</button>
-							<button><i class="fa fa-gear"></i> Game Setting</button>
-							<button><i class="fa fa-user"></i> Common Setting</button>
+							<button data-bs-toggle="modal" data-bs-target="#editGame"><i class="fa fa-pencil"></i> Configure Game</button>
+							<button  data-bs-toggle="modal" data-bs-target="#gameSetting"><i class="fa fa-gear"></i> Game Setting</button>
+							<button  data-bs-toggle="modal" data-bs-target="#commonSetting"><i class="fa fa-user"></i> Common Setting</button>
 						</div>
 					</td>
-      		</tr>
-      		<tr>
+      		</tr><tr>
       			<td>Draw</td>
       			<td>12 Cards Joker PC</td>
       			<td>52.221.186.43</td>
@@ -428,23 +397,22 @@
       			<td>Casino_Lobby</td>
       			<td>Lobby</td>
       			<td>-</td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame"><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
       			<td>V17</td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/category_images/image (7).png" width="50" height="50"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin//theme/52casino/game_images/12cardspc.png" width="80" height="45"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/game_images/V17/12cardspc.png" width="80" height="50"></td>
       			<td><button class="action" style="border: 0;background: transparent;"><i class="fa fa-gear"></i></button>
       			<div class="action-btn action-btn-game">
-							<button><i class="fa fa-pencil"></i> Configure Game</button>
-							<button><i class="fa fa-gear"></i> Game Setting</button>
-							<button><i class="fa fa-user"></i> Common Setting</button>
+							<button data-bs-toggle="modal" data-bs-target="#editGame"><i class="fa fa-pencil"></i> Configure Game</button>
+							<button  data-bs-toggle="modal" data-bs-target="#gameSetting"><i class="fa fa-gear"></i> Game Setting</button>
+							<button  data-bs-toggle="modal" data-bs-target="#commonSetting"><i class="fa fa-user"></i> Common Setting</button>
 						</div>
 					</td>
-      		</tr>
-      		<tr>
+      		</tr><tr>
       			<td>Draw</td>
       			<td>12 Cards Joker PC</td>
       			<td>52.221.186.43</td>
@@ -454,23 +422,22 @@
       			<td>Casino_Lobby</td>
       			<td>Lobby</td>
       			<td>-</td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame"><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
       			<td>V17</td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/category_images/image (7).png" width="50" height="50"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin//theme/52casino/game_images/12cardspc.png" width="80" height="45"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/game_images/V17/12cardspc.png" width="80" height="50"></td>
       			<td><button class="action" style="border: 0;background: transparent;"><i class="fa fa-gear"></i></button>
       			<div class="action-btn action-btn-game">
-							<button><i class="fa fa-pencil"></i> Configure Game</button>
-							<button><i class="fa fa-gear"></i> Game Setting</button>
-							<button><i class="fa fa-user"></i> Common Setting</button>
+							<button data-bs-toggle="modal" data-bs-target="#editGame"><i class="fa fa-pencil"></i> Configure Game</button>
+							<button  data-bs-toggle="modal" data-bs-target="#gameSetting"><i class="fa fa-gear"></i> Game Setting</button>
+							<button  data-bs-toggle="modal" data-bs-target="#commonSetting"><i class="fa fa-user"></i> Common Setting</button>
 						</div>
 					</td>
-      		</tr>
-      		<tr>
+      		</tr><tr>
       			<td>Draw</td>
       			<td>12 Cards Joker PC</td>
       			<td>52.221.186.43</td>
@@ -480,23 +447,22 @@
       			<td>Casino_Lobby</td>
       			<td>Lobby</td>
       			<td>-</td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame"><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
       			<td>V17</td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/category_images/image (7).png" width="50" height="50"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin//theme/52casino/game_images/12cardspc.png" width="80" height="45"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/game_images/V17/12cardspc.png" width="80" height="50"></td>
       			<td><button class="action" style="border: 0;background: transparent;"><i class="fa fa-gear"></i></button>
       			<div class="action-btn action-btn-game">
-							<button><i class="fa fa-pencil"></i> Configure Game</button>
-							<button><i class="fa fa-gear"></i> Game Setting</button>
-							<button><i class="fa fa-user"></i> Common Setting</button>
+							<button data-bs-toggle="modal" data-bs-target="#editGame"><i class="fa fa-pencil"></i> Configure Game</button>
+							<button  data-bs-toggle="modal" data-bs-target="#gameSetting"><i class="fa fa-gear"></i> Game Setting</button>
+							<button  data-bs-toggle="modal" data-bs-target="#commonSetting"><i class="fa fa-user"></i> Common Setting</button>
 						</div>
 					</td>
-      		</tr>
-      		<tr>
+      		</tr><tr>
       			<td>Draw</td>
       			<td>12 Cards Joker PC</td>
       			<td>52.221.186.43</td>
@@ -506,97 +472,19 @@
       			<td>Casino_Lobby</td>
       			<td>Lobby</td>
       			<td>-</td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame"><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
+      			<td><a  data-bs-toggle="modal" data-bs-target="#activeGame" ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
       			<td>V17</td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/category_images/image (7).png" width="50" height="50"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin//theme/52casino/game_images/12cardspc.png" width="80" height="45"></td>
       			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/game_images/V17/12cardspc.png" width="80" height="50"></td>
       			<td><button class="action" style="border: 0;background: transparent;"><i class="fa fa-gear"></i></button>
       			<div class="action-btn action-btn-game">
-							<button><i class="fa fa-pencil"></i> Configure Game</button>
-							<button><i class="fa fa-gear"></i> Game Setting</button>
-							<button><i class="fa fa-user"></i> Common Setting</button>
-						</div>
-					</td>
-      		</tr>
-      		<tr>
-      			<td>Draw</td>
-      			<td>12 Cards Joker PC</td>
-      			<td>52.221.186.43</td>
-      			<td>9933</td>
-      			<td></td>
-      			<td>8080</td>
-      			<td>Casino_Lobby</td>
-      			<td>Lobby</td>
-      			<td>-</td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
-      			<td>V17</td>
-      			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/category_images/image (7).png" width="50" height="50"></td>
-      			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin//theme/52casino/game_images/12cardspc.png" width="80" height="45"></td>
-      			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/game_images/V17/12cardspc.png" width="80" height="50"></td>
-      			<td><button class="action" style="border: 0;background: transparent;"><i class="fa fa-gear"></i></button>
-      			<div class="action-btn action-btn-game">
-							<button><i class="fa fa-pencil"></i> Configure Game</button>
-							<button><i class="fa fa-gear"></i> Game Setting</button>
-							<button><i class="fa fa-user"></i> Common Setting</button>
-						</div>
-					</td>
-      		</tr>
-      		<tr>
-      			<td>Draw</td>
-      			<td>12 Cards Joker PC</td>
-      			<td>52.221.186.43</td>
-      			<td>9933</td>
-      			<td></td>
-      			<td>8080</td>
-      			<td>Casino_Lobby</td>
-      			<td>Lobby</td>
-      			<td>-</td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
-      			<td>V17</td>
-      			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/category_images/image (7).png" width="50" height="50"></td>
-      			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin//theme/52casino/game_images/12cardspc.png" width="80" height="45"></td>
-      			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/game_images/V17/12cardspc.png" width="80" height="50"></td>
-      			<td><button class="action" style="border: 0;background: transparent;"><i class="fa fa-gear"></i></button>
-      			<div class="action-btn action-btn-game">
-							<button><i class="fa fa-pencil"></i> Configure Game</button>
-							<button><i class="fa fa-gear"></i> Game Setting</button>
-							<button><i class="fa fa-user"></i> Common Setting</button>
-						</div>
-					</td>
-      		</tr>
-      		<tr>
-      			<td>Draw</td>
-      			<td>12 Cards Joker PC</td>
-      			<td>52.221.186.43</td>
-      			<td>9933</td>
-      			<td></td>
-      			<td>8080</td>
-      			<td>Casino_Lobby</td>
-      			<td>Lobby</td>
-      			<td>-</td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-ban" style="color:#bc0000" aria-hidden="true"></i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
-      			<td><a ><i class="fa fa-unlock-alt" style="color:#119800;" aria-hidden="true"> </i></a></td>
-      			<td>V17</td>
-      			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/category_images/image (7).png" width="50" height="50"></td>
-      			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin//theme/52casino/game_images/12cardspc.png" width="80" height="45"></td>
-      			<td><img class="" id="" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/game_images/V17/12cardspc.png" width="80" height="50"></td>
-      			<td><button class="action" style="border: 0;background: transparent;"><i class="fa fa-gear"></i></button>
-      			<div class="action-btn action-btn-game">
-							<button><i class="fa fa-pencil"></i> Configure Game</button>
-							<button><i class="fa fa-gear"></i> Game Setting</button>
-							<button><i class="fa fa-user"></i> Common Setting</button>
+							<button data-bs-toggle="modal" data-bs-target="#editGame"><i class="fa fa-pencil"></i> Configure Game</button>
+							<button  data-bs-toggle="modal" data-bs-target="#gameSetting"><i class="fa fa-gear"></i> Game Setting</button>
+							<button  data-bs-toggle="modal" data-bs-target="#commonSetting"><i class="fa fa-user"></i> Common Setting</button>
 						</div>
 					</td>
       		</tr>
@@ -613,6 +501,637 @@
 	
 </div>
 </div>
+
+<!-- Advanced Setting -->
+
+<div class="modal fade" id="advancedSetting" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" role="dialog">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Advanced Setting</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          
+
+               
+           <div class="advance-form" style="padding: 0 15px;">
+          <div class="row">
+            <div class="col-sm-4 m-t-2 text-right">
+              <label>SignUp Layout</label>
+            </div>
+      <div class="col-sm-4 text-center">
+      <div class="radio">
+      <label><input type="radio" name="s_theme" id="classic" value="classic">&nbsp;Classic</label>
+      </div>
+      </div>
+
+      <div class="col-sm-4 text-center">
+      <div class="radio">
+      <label><input type="radio" name="s_theme" id="advance" value="advance">&nbsp;Advance</label>
+      </div>
+      </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4  m-t-2 text-right">
+              <label>Bot Auto Fill</label>
+            </div>
+      <div class="col-sm-4 text-center">
+      <div class="radio">
+      <label><input type="radio" name="bot_auto_fill" id="bot_yes" value="1">&nbsp;Yes</label>
+      </div>
+      </div>
+
+      <div class="col-sm-4 text-center">
+      <div class="radio">
+      <label><input type="radio" name="bot_auto_fill" id="bot_no" value="0">&nbsp;No</label>
+      </div>
+      </div>
+      
+      </div>
+
+          <div class="row hide-timer">
+            <div class="col-sm-4  m-t-2 text-right">
+              <label>Client ISD Code</label>
+            </div>
+            <div class="col-sm-8">
+              <input type="text" class="form-control hide-timer" onkeypress="return isNumber1(event)" maxlength="3" placeholder="" id="client_isd">
+            </div>
+            
+          </div>  
+
+           <div class="row hide-timer">
+            <div class="col-sm-4  m-t-2 text-right">
+              <label>Phone Length</label>
+            </div>
+            <div class="col-sm-8">
+           <select class="form-control" name="mobile_valid" id="mobile_valid" selected="selected">
+                  <option value="1">10</option>
+                  <option value="2">11</option>
+                  <option value="3">10,11</option>
+                  <option value="4">12</option>
+                  <option value="5">9</option>
+                  <option value="6">10,11,12</option>
+           </select></div>
+            
+          </div>  
+
+          <div class="row hide-timer">
+            <div class="col-sm-4  m-t-2 text-right">
+              <label>Is Club Client</label>
+            </div>
+           <div class="col-sm-4 text-center">
+      <div class="radio">
+      <label><input type="radio" name="is_clubclient" id="club_yes" value="1">&nbsp;Yes</label>
+      </div>
+      </div>
+
+      <div class="col-sm-4 text-center">
+      <div class="radio">
+      <label><input type="radio" name="is_clubclient" id="club_no" value="0">&nbsp;No</label>
+      </div>
+      </div>
+            
+          </div>
+           <div class="row hide-timer">
+            <div class="col-sm-4  m-t-2 text-right">
+              <label>Admin domain</label>
+            </div>
+            <div class="col-sm-8">
+              <input type="text" class="form-control hide-timer" placeholder="" id="domain_name">
+            </div>
+            
+          </div> 
+          <div class="row hide-timer">
+            <div class="col-sm-4  m-t-2 text-right">
+              <label>Staff domain</label>
+            </div>
+            <div class="col-sm-8">
+              <input type="text" class="form-control hide-timer" placeholder="" id="staff_name">
+            </div>
+            
+          </div> 
+          <div class="row hide-timer">
+            <div class="col-sm-4  m-t-2 text-right">
+              <label>BO domain</label>
+            </div>
+            <div class="col-sm-8">
+              <input type="text" class="form-control hide-timer" placeholder="" id="bo_name">
+            </div>
+            
+          </div>    
+           </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Active Game  -->
+
+<div class="modal fade" id="activeGame" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" role="dialog">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Active Game</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          
+
+               
+           <div class="advance-form" style="padding: 0 15px;">
+          	<div class="row">
+          		<div class="col-md-12">
+          			<p class="m-0">Please chose whom you want to assign this game.</p>
+          		</div>
+          	</div> 
+          	<div class="row">
+          		<div class="col-6">
+          			<span class="d-block">Affiliate</span>
+          			<div class="switchToggle m-t-5">
+                <input type="checkbox" name="affiliate_assign" id="affiliate_assign" value="" class="switch">
+                <label for="affiliate_assign" class="no"></label>
+            </div>
+          		</div>
+          		<div class="col-6">
+          			<span class="d-block">Player</span>
+          			<div class="switchToggle m-t-5">
+                <input type="checkbox" name="player_assign" id="player_assign" value="" class="switch">
+                <label for="player_assign" class="no" data-editor="true"></label>
+            </div>
+          		</div>
+          	</div>  
+           </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Edit Game -->
+
+<div class="modal fade" id="editGame" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" role="dialog">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">12 Cards Joker PC - Edit Game</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          
+
+               
+           <div class="advance-form" style="padding: 0 15px;">
+          	
+      <div class="row">
+          <!-- <label class="col-lg-2 control-label label_top_margin"></label> -->
+         
+           <div class="col-lg-9">
+           <span>SFS Address</span>
+           <div class="form-group" style="display:flex;">
+            <div class="col-lg-3" style="padding-right: 4px;">
+                <input type="text" class="form-control input-sm text-center" id="sfs_add1" onkeypress="return isNumber1(event)" placeholder="SFS Address" autocomplete="off">
+            </div>
+            <div class="col-lg-3" style="padding-right: 4px;">
+                <input type="text" class="form-control input-sm text-center" id="sfs_add2" onkeypress="return isNumber1(event)" placeholder="SFS Address" autocomplete="off">
+            </div>
+            <div class="col-lg-3" style="padding-right: 4px;">
+                <input type="text" class="form-control input-sm text-center" id="sfs_add3" onkeypress="return isNumber1(event)" placeholder="SFS Address" autocomplete="off">
+            </div>
+            <div class="col-lg-3" style="padding-right: 4px;"> 
+                <input type="text" class="form-control input-sm text-center" id="sfs_add4" onkeypress="return isNumber1(event)" placeholder="SFS Address" autocomplete="off">         
+            </div>
+          </div>
+        </div>
+          <!-- <label class="col-lg-1 control-label label_top_margin">SFS Port</label> -->
+          
+          <div class="col-lg-3">
+            <span>SFS Port</span>
+            <div class="form-group">
+              <input type="text" class="form-control input-sm" id="sfs_port_add" onkeypress="return isNumber1(event)" maxlength="4" placeholder="SFS Port" autocomplete="off">
+            </div>
+          </div>
+      </div>
+      <div class="row">
+             <!-- <label class="col-lg-2 control-label label_top_margin"></label> -->
+             
+             <div class="col-lg-9">
+              <span>Web URL</span>
+               <div class="form-group">
+                 <input type="text" class="form-control input-sm" id="web_url" placeholder="Web URL" autocomplete="off">
+               </div>
+             </div>
+             <!-- <label class="col-lg-1 control-label label_top_margin">SFS Port</label> -->
+             
+             <div class="col-lg-3">
+              <span>Web Port</span>
+               <div class="form-group">
+                 <input type="text" class="form-control input-sm" id="web_port" onkeypress="return isNumber1(event)" maxlength="4" placeholder="WEb Port" autocomplete="off">
+               </div>
+             </div>
+      </div>  
+    <div class="row">
+          <div class="col-lg-6">
+            <span>Room Name</span>
+            <div class="form-group">
+              <input type="text" class="form-control input-sm" id="room_name" placeholder="Room Name" autocomplete="off">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <span>Zone Name</span>
+            <div class="form-group">
+              <input type="text" class="form-control input-sm" id="zone_name" placeholder="Zone Name" autocomplete="off">
+            </div>
+          </div>
+        </div>  
+        
+        
+          
+        
+          
+        
+        <div class="row align-items-center">
+        
+          <div class="col-lg-4">
+            <span>Game Theme</span>
+            <div class="form-group">
+              <select name="game_theme" id="game_theme" class="form-control input-sm">
+                                   <option value="classic">Classic</option>
+                                   <option value="culture">Culture</option>
+                                   <option value="fox">Fox</option>
+                                   <option value="pro">Pro</option>
+                                   <option value="sierra">Sierra</option>
+                               
+                
+                option
+              </select>
+            </div>
+          </div>
+
+           <div class="col-lg-4">
+            <span>Is Winsetting</span>
+            <div class="form-group">
+              <select name="is_winsetting" id="is_winsetting" class="form-control input-sm">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            
+            <button type="button" class="btn btn-primary col-sm-12 m-t-10" style="margin-top: 22px;" onclick="auto_fill_gameconfig();">AUTO FILL</button>
+          </div>
+           
+        </div>  
+        
+      <div class="row">
+           
+     <div class="col-lg-12 text-center">
+      <div class="form-group">
+            <div class="profile_photo_edit_pic text-center" id="img_upload_txt">
+              Upload Web Image
+              <input type="file" onchange="readURL(this);" class="file-upload-button apply_cv" placeholder="" id="img_upload" value="">
+            </div>
+          </div>
+     </div>
+
+     <div class="col-lg-6 text-center">
+       
+     <img class="cal-sm-12" alt="NO IMAGE" onerror="this.onerror=null; this.src='http://backoffice-staging.enginem.info/allpokers_admin/assets/images/m_logo.png'" id="img_link" src="http://backoffice-staging.enginem.info/allpokers_admin//theme/52casino/game_images/12cardspc.png" width="150" height="80">
+     
+     </div>
+
+     <div class="col-lg-6 text-center">
+      <div class="form-group">
+        <button type="button" class="btn btn-primary col-sm-8" style="height:74px;width: 100%;" data-toggle="modal" onclick="get_gameasseturl()" data-target="#asstesconfigmodal">CONFIG ASSETS</button>
+      </div>
+     </div>
+
+   </div>
+   <div class="row">
+      <div class="col-sm-12">
+      <div class="form-group">
+            <div class="profile_photo_edit_pic text-center" id="img_upload_txt">
+              Upload Mobile Image
+              <input type="file" onchange="readURL1(this);" class="file-upload-button apply_cv" placeholder="" id="mb_imgupload" value="">
+            </div>
+
+            <div class="profile_photo_edit_pic text-center pull-right" id="img_upload_txt">
+              Upload Mobile Image 2x
+              <input type="file" onchange="readURL3(this);" class="file-upload-button apply_cv" placeholder="" id="mb_imgupload_2x" value="">
+            </div>
+      </div>
+
+
+      </div>
+          
+
+      
+      <div class="col-lg-12 text-center">
+            
+          <img class="cal-sm-12 pull-left" alt="NO IMAGE" onerror="this.onerror=null; this.src='http://backoffice-staging.enginem.info/allpokers_admin/assets/images/m_logo.png'" id="mb_imglink" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/game_images/V17/12cardspc.png" width="150" height="80">
+
+          <img class="cal-sm-12 pull-right" alt="NO IMAGE" onerror="this.onerror=null; this.src='http://backoffice-staging.enginem.info/allpokers_admin/assets/images/m_logo.png'" id="mb_imglink_2x" src="http://backoffice-staging.enginem.info/allpokers_admin/theme/52casino/game_images/V17/12cardspc_2x.png" width="150" height="80">
+          
+          </div>
+           
+        </div>
+            
+           </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Game Setting -->
+
+ <div class="modal fade" id="gameSetting" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" role="dialog">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Active Game</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          
+
+               
+           <div class="advance-form" style="padding: 0 15px;">
+          	<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Default</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Cards Setting</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Chip Setting</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Payout Condition</button>
+  </li>
+</ul>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="row">
+            <div class="col-sm-4 m-t-2 text-right">
+              <span>Minimum bet</span>
+            </div>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" onkeypress="return isNumber1(event)" maxlength="7" placeholder="" id="min_bet_jkr">
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-sm-4  m-t-2 text-right">
+              <span>Maximum bet</span>
+            </div>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" onkeypress="return isNumber1(event)" maxlength="7" placeholder="" id="max_bet_jkr">
+            </div>
+            
+          </div>
+              <div class="row">
+                              
+                                
+                                    <div class="col-sm-4 m-t-2 text-right">
+                                      <span>Bet Timer</span>
+                                    </div>
+                                    <div class="col-sm-8">
+                                      <input type="text" class="form-control" onkeypress="return isNumber1(event)" maxlength="7" placeholder="" id="cards_bac_timer">
+                                    </div>
+                                    
+                                    
+                                  
+                          
+                      </div>
+                      <div class="row">
+                              
+                                
+                                    <div class="col-sm-2 col-md-4 padding-3 m-t-2 text-right pc_game">
+                                      <span>Report Type : </span>
+                                    </div>
+                                    <div class="col-md-4 padding-3">
+                                      <div class="m-t-2 text-right pc_game">
+                                      <span>Win Point : </span>
+                                      <input type="radio" name="is_claim" id="win_point" style="margin-top:10px" value="0">
+                                    </div>
+                                    
+                                     
+                                    </div>
+                                    
+                                    <div class="col-md-4 padding-3">
+                                      <div class="m-t-2 text-right pc_game">
+                                      <span>Claim Point : </span>
+                                      <input type="radio" name="is_claim" id="claim_point" style="margin-top:10px" value="1">
+                                    </div>
+                                    
+                                    </div>
+                      </div>
+  </div>
+  <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+  	<div class="row">
+  		<div class="col-sm-12">     
+                <div class="table-responsive">
+                  <table class="table table-bordered manual-height2" id="show_card_list">
+                    <thead class="tablehead">
+                      <tr>                
+                        <th class="text-center">Card</th>
+                        <th class="text-center">Code</th>
+                      </tr>
+                    </thead>
+                    <tbody id="get_card_list" style="padding:3px 0px!important"><tr><td class="text-center"><img src="http://backoffice-staging.enginem.info/allpokers_admin/assets/images/card_images/JofHearts.png" width="25" height="25"></td><td class="text-center">JH</td></tr><tr><td class="text-center"><img src="http://backoffice-staging.enginem.info/allpokers_admin/assets/images/card_images/JofSpade.png" width="25" height="25"></td><td class="text-center">JS</td></tr><tr><td class="text-center"><img src="http://backoffice-staging.enginem.info/allpokers_admin/assets/images/card_images/JofDiamond.png" width="25" height="25"></td><td class="text-center">JD</td></tr><tr><td class="text-center"><img src="http://backoffice-staging.enginem.info/allpokers_admin/assets/images/card_images/JofClub.png" width="25" height="25"></td><td class="text-center">JC</td></tr><tr><td class="text-center"><img src="http://backoffice-staging.enginem.info/allpokers_admin/assets/images/card_images/QofHearts.png" width="25" height="25"></td><td class="text-center">QH</td></tr><tr><td class="text-center"><img src="http://backoffice-staging.enginem.info/allpokers_admin/assets/images/card_images/QofSpade.png" width="25" height="25"></td><td class="text-center">QS</td></tr><tr><td class="text-center"><img src="http://backoffice-staging.enginem.info/allpokers_admin/assets/images/card_images/QofDiamond.png" width="25" height="25"></td><td class="text-center">QD</td></tr><tr><td class="text-center"><img src="http://backoffice-staging.enginem.info/allpokers_admin/assets/images/card_images/QofClub.png" width="25" height="25"></td><td class="text-center">QC</td></tr><tr><td class="text-center"><img src="http://backoffice-staging.enginem.info/allpokers_admin/assets/images/card_images/KofHearts.png" width="25" height="25"></td><td class="text-center">KH</td></tr><tr><td class="text-center"><img src="http://backoffice-staging.enginem.info/allpokers_admin/assets/images/card_images/KofSpade.png" width="25" height="25"></td><td class="text-center">KS</td></tr><tr><td class="text-center"><img src="http://backoffice-staging.enginem.info/allpokers_admin/assets/images/card_images/KofDiamond.png" width="25" height="25"></td><td class="text-center">KD</td></tr><tr><td class="text-center"><img src="http://backoffice-staging.enginem.info/allpokers_admin/assets/images/card_images/KofClub.png" width="25" height="25"></td><td class="text-center">KC</td></tr></tbody>
+                  </table>
+                </div>              
+              </div>
+  	</div>
+  </div>
+  <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+  	<div class="manual-height chip-setting">
+                
+              <div class="row">
+            <div class="col-md-6 no-paddings chip_section row">
+              <label class="col-xl-4 col-lg-4 col-md-2 col-sm-4 control-label m-t-xs">Chip 1 Value</label>
+              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-4">
+                <input type="text" id="jkr_chips1" onkeypress="return isNumber1(event)" class="text-center form-control nocopypaste" value="" ondrop="return false" style="display: inline-block">
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-4 bottom_space radio-width-sec" style="display: inline-block">
+                <div class="checkbox"><label for="jkr_default_chip" class="switch sm-switch"><input type="checkbox" id="jkr_chip_chk1" name="jkr_default_chip"><span class="slider round sm-slider"></span> </label></div>
+                <span class="unchk_fnd"></span>
+              </div>
+            </div>
+            <div class="col-md-6 no-paddings chip_section row">
+              <label class="col-xl-4 col-lg-4 col-md-2 col-sm-4 control-label m-t-xs">Chip 2 Value</label>
+              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-4">
+                <input type="text" id="jkr_chips2" onkeypress="return isNumber1(event)" class="text-center form-control nocopypaste" value="chip_2value" ondrop="return false">
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-4 bottom_space radio-width-sec" style="display: inline-block">
+                <div class="checkbox"><label class="switch sm-switch"><input type="checkbox" id="jkr_chip_chk2" name="jkr_default_chip"><span class="slider round sm-slider"></span> </label></div>
+                <span class="unchk_fnd"></span>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-md-6 no-paddings chip_section row">
+              <label class="col-xl-4 col-lg-4 col-md-2 col-sm-4 control-label m-t-xs">Chip 3 Value</label>
+              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-4">
+                <input type="text" id="jkr_chips3" onkeypress="return isNumber1(event)" class="text-center form-control nocopypaste" value="chip_3value" ondrop="return false">
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-4 bottom_space radio-width-sec" style="display: inline-block">
+                <div class="checkbox"><label class="switch sm-switch"><input type="checkbox" id="jkr_chip_chk3" name="jkr_default_chip"><span class="slider round sm-slider"></span> </label></div>
+                <span class="unchk_fnd"></span>
+              </div>
+            </div>
+            <div class="col-md-6 no-paddings chip_section row">
+              <label class="col-xl-4 col-lg-4 col-md-2 col-sm-4 control-label m-t-xs">Chip 4 Value</label>
+              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-4">
+                <input type="text" id="jkr_chips4" onkeypress="return isNumber1(event)" class="text-center form-control nocopypaste" value="chip_4value" ondrop="return false">
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-4 bottom_space radio-width-sec" style="display: inline-block">
+                <div class="checkbox"><label class="switch sm-switch"><input type="checkbox" id="jkr_chip_chk4" name="jkr_default_chip"><span class="slider round sm-slider"></span> </label></div>
+                <span class="unchk_fnd"></span>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-md-6 no-paddings chip_section row">
+              <label class="col-xl-4 col-lg-4 col-md-2 col-sm-4 control-label m-t-xs">Chip 5 Value</label>
+              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-4">
+                <input type="text" id="jkr_chips5" onkeypress="return isNumber1(event)" class="text-center form-control nocopypaste" value="chip_5value">
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-4 bottom_space radio-width-sec" style="display: inline-block">
+                <div class="checkbox"><label class="switch sm-switch"><input type="checkbox" id="jkr_chip_chk5" name="jkr_default_chip"><span class="slider round sm-slider"></span> </label></div>
+                <span class="unchk_fnd"></span>
+              </div>
+            </div>
+          
+            <div class="col-md-6 no-paddings chip_section row">
+              <label class="col-xl-4 col-lg-4 col-md-2 col-sm-4 control-label m-t-xs">Chip 6 Value</label>
+              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-4">
+                <input type="text" id="jkr_chips6" onkeypress="return isNumber1(event)" class="text-center form-control nocopypaste" value="chip_6value" ondrop="return false">
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-4 bottom_space radio-width-sec" style="display: inline-block">
+                <div class="checkbox"><label class="switch sm-switch"><input type="checkbox" id="jkr_chip_chk6" name="jkr_default_chip"><span class="slider round sm-slider"></span> </label></div>
+                <span class="unchk_fnd"></span>
+              </div>
+            </div>
+          </div>
+
+              </div>
+  </div>
+  <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+  	<div class="manual-height">
+             <div class="row">
+
+        <div class="col-sm-6 m-t-2">
+          <div class="form-group">
+         
+            <label for="">Max Winning (%)</label>
+            <select class="form-control" id="jkr_max_win" name="jkr_max_win" selected="selected">
+             <!--   <option value=""></option> -->
+             <!--   -->
+             
+            
+            <option value="40.00">40.00</option><option value="40.50">40.50</option><option value="41.00">41.00</option><option value="41.50">41.50</option><option value="42.00">42.00</option><option value="42.50">42.50</option><option value="43.00">43.00</option><option value="43.50">43.50</option><option value="44.00">44.00</option><option value="44.50">44.50</option><option value="45.00">45.00</option><option value="45.50">45.50</option><option value="46.00">46.00</option><option value="46.50">46.50</option><option value="47.00">47.00</option><option value="47.50">47.50</option><option value="48.00">48.00</option><option value="48.50">48.50</option><option value="49.00">49.00</option><option value="49.50">49.50</option><option value="50.00">50.00</option><option value="50.50">50.50</option><option value="51.00">51.00</option><option value="51.50">51.50</option><option value="52.00">52.00</option><option value="52.50">52.50</option><option value="53.00">53.00</option><option value="53.50">53.50</option><option value="54.00">54.00</option><option value="54.50">54.50</option><option value="55.00">55.00</option><option value="55.50">55.50</option><option value="56.00">56.00</option><option value="56.50">56.50</option><option value="57.00">57.00</option><option value="57.50">57.50</option><option value="58.00">58.00</option><option value="58.50">58.50</option><option value="59.00">59.00</option><option value="59.50">59.50</option><option value="60.00">60.00</option><option value="60.50">60.50</option><option value="61.00">61.00</option><option value="61.50">61.50</option><option value="62.00">62.00</option><option value="62.50">62.50</option><option value="63.00">63.00</option><option value="63.50">63.50</option><option value="64.00">64.00</option><option value="64.50">64.50</option><option value="65.00">65.00</option><option value="65.50">65.50</option><option value="66.00">66.00</option><option value="66.50">66.50</option><option value="67.00">67.00</option><option value="67.50">67.50</option><option value="68.00">68.00</option><option value="68.50">68.50</option><option value="69.00">69.00</option><option value="69.50">69.50</option><option value="70.00">70.00</option><option value="70.50">70.50</option><option value="71.00">71.00</option><option value="71.50">71.50</option><option value="72.00">72.00</option><option value="72.50">72.50</option><option value="73.00">73.00</option><option value="73.50">73.50</option><option value="74.00">74.00</option><option value="74.50">74.50</option><option value="75.00">75.00</option><option value="75.50">75.50</option><option value="76.00">76.00</option><option value="76.50">76.50</option><option value="77.00">77.00</option><option value="77.50">77.50</option><option value="78.00">78.00</option><option value="78.50">78.50</option><option value="79.00">79.00</option><option value="79.50">79.50</option><option value="80.00">80.00</option><option value="80.50">80.50</option><option value="81.00">81.00</option><option value="81.50">81.50</option><option value="82.00">82.00</option><option value="82.50">82.50</option><option value="83.00">83.00</option><option value="83.50">83.50</option><option value="84.00">84.00</option><option value="84.50">84.50</option><option value="85.00">85.00</option><option value="85.50">85.50</option><option value="86.00">86.00</option><option value="86.50">86.50</option><option value="87.00">87.00</option><option value="87.50">87.50</option><option value="88.00">88.00</option><option value="88.50">88.50</option><option value="89.00">89.00</option><option value="89.50">89.50</option><option value="90.00">90.00</option><option value="90.50">90.50</option><option value="91.00">91.00</option><option value="91.50">91.50</option><option value="92.00">92.00</option><option value="92.50">92.50</option><option value="93.00">93.00</option><option value="93.50">93.50</option><option value="94.00">94.00</option><option value="94.50">94.50</option><option value="95.00">95.00</option><option value="95.50">95.50</option><option value="96.00">96.00</option><option value="96.50">96.50</option><option value="97.00">97.00</option><option value="97.50">97.50</option><option value="98.00">98.00</option><option value="98.50">98.50</option><option value="99.00">99.00</option><option value="99.50">99.50</option><option value="100.00">100.00</option><option value="100.50">100.50</option><option value="101.00">101.00</option><option value="101.50">101.50</option><option value="102.00">102.00</option><option value="102.50">102.50</option><option value="103.00">103.00</option><option value="103.50">103.50</option><option value="104.00">104.00</option><option value="104.50">104.50</option><option value="105.00">105.00</option><option value="105.50">105.50</option><option value="106.00">106.00</option><option value="106.50">106.50</option><option value="107.00">107.00</option><option value="107.50">107.50</option><option value="108.00">108.00</option><option value="108.50">108.50</option><option value="109.00">109.00</option><option value="109.50">109.50</option><option value="110.00">110.00</option></select>
+            <input type="hidden" name="jkr_max_win_old" id="jkr_max_win_old" value="0">
+            
+          </div>
+        </div>
+
+        <div class="col-sm-6 m-t-2">
+          <div class="form-group">
+            <label for="">Extended Winning (%)</label>
+           <select class="form-control" id="jkr_ext_max_win" name="jkr_ext_max_win" selected="selected">
+              <!--  -->
+              
+            
+            <option value="0.00" id="1">0.00</option><option value="1.00" id="2">1.00</option><option value="2.00" id="3">2.00</option><option value="3.00" id="4">3.00</option><option value="4.00" id="5">4.00</option><option value="5.00" id="6">5.00</option><option value="7.00" id="7">7.00</option><option value="8.00" id="8">8.00</option><option value="9.00" id="9">9.00</option><option value="10.00" id="10">10.00</option></select> 
+          </div>
+        </div>
+
+        <div class="col-sm-6 m-t-2">
+          <div class="form-group" id="jkr_limitsoption"><label for="">Max Winning Limit</label><select class="form-control" id="jkr_set_max_limit" onchange="jkr_maximum_limit_set()"><option value="-1" disabled="disabled">Please Select Max Limit</option><option value="0">Set Limit</option><option value="1" selected="selected">No Limit</option></select></div>
+        </div>
+        
+        <div class="col-sm-6 m-t-2 hidden" id="jkr_visible_onchange">
+          <div class="form-group">
+            <label for="">Enter Maximum Limit</label>
+              <input type="text" autofocus="" id="jkr_max_win_limit" class="form-control" name="jkr_max_winlmt">
+          </div>
+        </div>
+
+        <div class="col-sm-6 m-t-2">
+          <div class="form-group" id="jkr_vailduntilloptions"><label for="">Valid Until</label><select class="form-control" id="jkr_on_set_time" disabled="disabled" onchange="jkr_onsettime()"><option value="-1" disabled="disabled">Please Select to set time</option><option value="1">Lifetime</option><option value="0" selected="selected">Valid Until</option></select></div>
+        </div>
+
+        <div class="col-sm-6 m-t-2" id="jkr_on_value_set_time"><label form="">Please Select Date</label><div class="input-group"><input type="text" readonly="" class="form-control hasDatepicker" value="0000-00-00" required="true" name="jkr_validuntil" id="jkr_validstart_date"><div class="input-group-addon jkr_edit_game_calend"></div></div></div> 
+      </div>
+     
+      
+    </div>
+  </div>
+</div>
+           </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Common Setting -->
+
+<div class="modal fade" id="commonSetting" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" role="dialog">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Active Game</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          
+
+               
+           <div class="advance-form" style="padding: 0 15px;">
+          	 <div class="row">
+                   <label class="col-md-5 control-label">Bet Amount Withdraw</label>
+            
+                  <div class="col-sm-7">
+                    <select id="commonsetting" class="form-control">
+                    <!--    <option value="">Options</option> -->
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                    </div>
+                  </div>
+           </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <script type="text/javascript" src="assets/js/jquery.js"></script>
 

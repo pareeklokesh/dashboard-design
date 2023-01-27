@@ -1708,6 +1708,9 @@ a {
 
 
 @media (min-width: 992px) {
+  .modal-dialog-editgame {
+    max-width: 600px !important;
+  }
   .logo-menu.logo-menu-open .ds-logo {
   width: 0;
   padding: 0;

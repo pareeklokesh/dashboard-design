@@ -1692,6 +1692,9 @@ a {
 .hidden {
   display: none !important;
 }
+.editgame-form .row {
+  margin-bottom: 20px;
+}
 
 
 

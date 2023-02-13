@@ -1699,6 +1699,27 @@ a {
   padding: 0 10px;
   font-size: 14px;
 }
+.live-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+}
+.live-list li span {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background: #adff2f;
+  border-radius: 50%;
+  border: 1px solid #969799;
+  margin-right: 5px;
+}
+.live-list li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 8px;
+}
 
 
 

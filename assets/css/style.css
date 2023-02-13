@@ -1410,7 +1410,7 @@ border-right: 0 !important;
 .action-btn-game button {
   width: 100%;
 }
-.game-all-btn, .table-btn, .ok-cancel-btn, .clear_new button {
+.game-all-btn, .table-btn, .ok-cancel-btn, .clear_new button, .excel-btn {
   padding: 8px 9px;
   font-size: 12px;
   text-transform: uppercase;
@@ -1694,6 +1694,10 @@ a {
 }
 .editgame-form .row {
   margin-bottom: 20px;
+}
+.text-include {
+  padding: 0 10px;
+  font-size: 14px;
 }
 
 

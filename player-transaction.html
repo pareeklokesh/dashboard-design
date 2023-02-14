@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header-wrapper">
+			<div class="logo-menu logo-menu-open">
+				
+				<a href="index.html" class="ds-logo">
+					<img src="assets/img/logo.png" />
+				</a>
+				<button class="menu-toggle menu-toggle-active">
+					<img class="active-menu-open" src="assets/img/toggle-bar.png" />
+					<img class="close-menu" src="assets/img/close.png" />
+					
+				</button>
+				<a href="#" class="logo-dash-close" style="color: #fff;margin-left: 5px;"><img src="assets/img/logo.png" /></a>
+			</div>
+			<div class="status-game">
+				<div class="dropdown dropdown-admin">
+  <a href="#" class="js-link">Admin <i class="fa fa-chevron-down"></i></a>
+  <ul class="js-dropdown-list">
+    <li><i class="fa fa-user"></i> My Account</li>
+    <li><i class="fa fa-lock"></i> Update Security</li>
+    <li><i class="fa fa-money" aria-hidden="true"></i> Generate Amount</li>
+    <li><i class="fa fa-file"></i> Set Landing Page</li>
+    <li><i class="fa fa-sign-out fa-fw"></i> Logout</li>
+  </ul>
+</div>
+				
+			</div>
+		</div>
+	</header>
+<div class="full-page full-page-active">
+
+
+<!-- Left Side Menu -->
+
+<div class="dashboardo-block scroller dashboardo-block-active">
+	<div class="das-menu">
+		
+		<div class="das-menu-list">
+			<ul>
+				<li class="nav-link">
+					<a href="index.html"><i class="fa fa fa-dashboard" title="Dashboard"></i><span>Dashboard</span></a>
+				</li>
+				<li class="dropdown nav-link">
+					<a href="javascript:void(0)"><i class="fa fa fa-users" title="Live Players"></i><span>Live Players</span> <span class="arrow"><img src="assets/img/right.png" width="8" /></span></a>
+					<ul class="sub-menu-list">
+						<li>
+							<a href="#">Live Players</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown nav-link">
+					<a href="javascript:void(0)"><i class="fa fa fa-tasks" title="Game Management"></i><span>Game Management</span>
+					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
+					</a>
+					<ul class="sub-menu-list">
+						<li>
+							<a href="#">Game summary 2.O</a>
+						</li>
+						<li>
+							<a href="#">Game results</a>
+						</li>
+						<li>
+							<a href="#"> Manage Games</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown nav-link">
+					<a href="javascript:void(0)"><i class="fa fa fa-users" title="Live Players"></i><span>Live Bets</span> <span class="arrow"><img src="assets/img/right.png" width="8" /></span></a>
+					<ul class="sub-menu-list">
+						<li>
+							<a href="#">Live Bets</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown nav-link">
+					<a href="javascript:void(0)"><i class="fa fa fa-history" title="Game History"></i><span>Game History</span><span class="arrow"><img src="assets/img/right.png" width="8" /></span>
+					</a>
+					<ul class="sub-menu-list">
+						<li>
+							<a href="#">Game History</a>
+						</li>
+						<li>
+							<a href="#">Game History 2.0</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown nav-link">
+					<a href="javascript:void(0)"><i class="fa fa fa-user"></i><span>Player Management</span>
+					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
+					</a>
+					<ul class="sub-menu-list">
+						<li>
+							<a href="#">Manage Player</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown nav-link">
+					<a href="javascript:void(0)"><i class="fa fa fa-users" title="HR Management"></i><span>HR Management</span>
+					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
+					</a>
+					<ul class="sub-menu-list">
+						<li>
+							<a href="#">Manage Club</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown nav-link">
+					<a href="javascript:void(0)"><i class="fa fa-money" title="Manage Campaign"></i><span>Messages</span>
+					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
+					</a>
+					<ul class="sub-menu-list">
+						<li>
+							<a href="#">Messages</a>
+						</li>
+					</ul>
+				</li>
+				
+				<li class="dropdown nav-link">
+					<a href="javascript:void(0)"><i class="fa fa fa-money" title="Finance"></i><span>Master Setting</span>
+					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
+					</a>
+					<ul class="sub-menu-list">
+						<li>
+							<a href="#">Game Category</a>
+						</li>
+						<li>
+							<a href="#">Game List</a>
+						</li>
+						<li>
+							<a href="#">SFS Server Log</a>
+						</li>
+						<li>
+							<a href="#">Manage Maintenance</a>
+						</li>
+						<li>
+							<a href="#">Game Setting</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown nav-link">
+					<a href="javascript:void(0)"><i class="fa fa-money" title="Manage Campaign"></i><span>Turnover Report</span>
+					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
+					</a>
+					<ul class="sub-menu-list">
+						<li>
+							<a href="#">Player Turnover</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown nav-link">
+					<a href="javascript:void(0)"><i class="fa fa-fighter-jet" title="Manage Bots"></i><span>Transcaction Report</span>
+					<span class="arrow"><img src="assets/img/right.png" width="8" /></span>
+					</a>
+					<ul class="sub-menu-list">
+						<li>
+							<a href="#">Player Transaction</a>
+						</li>
+					</ul>
+				</li>
+				
+				
+			</ul>
+		</div>
+
+		
+
+	</div>
+	<div class="das-footer">
+		
+	</div>
+</div>
+
+
+
+	<div class="loader-line"></div>
+	<!-- <div class="refresh">
+		<button class="refresh-btn"> <img src="assets/img/refresh.png" /></button>
+	</div> -->
+	<div class="right-sidebar">
+	
+	<div class="das-bg-block w-100" style="display:block;">
+		<div class="flex-wrap" style="display: flex;justify-content: space-between;align-items: center;">
+		<div class="das-title">
+			<h1>Player Transaction</h1>
+		</div>
+		<div class="filter-btn" style="display: flex;">
+			<div class="filter-item" id="search-filter" style="margin-right: 15px;">
+			<input type="text" placeholder="Search..." name="" class="table-search table-search-in" />
+			<button class="search-btn"><i class="fa fa-search"></i></button>
+		</div>
+			<button class="" id="search-filter-btn" style="margin-right:10px;"><i class="fa fa-search"></i></button>
+			<button id="filter-filter-btn">
+				<i class="fa fa-filter"></i>
+				<!-- <img src="assets/img/filter.png" class="deactive-filter" />
+				<img src="assets/img/filter(1).png" class="active-filter" /> -->
+			</button>
+		</div>	
+		</div>
+		<div class="w-100 table-filter" style="margin-top: 0px;">
+	
+	<div class="filter-item" id="filter-filter">
+			<select>
+			<option>Lorem Ipsum</option>
+			<option>Lorem Ipsum</option>
+		</select>
+		<button class="excel-btn" style="margin-right:10px;">Download Excel</button>
+		</div>
+	</div>
+
+	</div>
+	
+	
+	<div class="w-100 online-players-list" style="height: inherit;">
+		<table class="data-table table">
+			<thead>
+				<tr class="data-filter">
+					<th>Date</th>
+					<th>Session id</th>
+					<th>Username</th>
+					<th>Game</th>
+					<th>Opening Balance</th>
+					<th>Debit</th>
+					<th>Credit</th>
+					<th>Closing Balance</th>
+					<th>Event</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2023-02-13 17:26:04</td>
+					<td>301331676289364905</td>
+					<td>deepak09</td>
+					<td>VIP Baccarat</td>
+					<td>31,900.00</td>
+					<td>0.00</td>
+					<td>300.00</td>
+					<td>32,200.00 </td>
+					<td>Win</td>
+				</tr>
+				<tr>
+					<td>2023-02-13 17:26:04</td>
+					<td>301331676289364905</td>
+					<td>deepak09</td>
+					<td>VIP Baccarat</td>
+					<td>31,900.00</td>
+					<td>0.00</td>
+					<td>300.00</td>
+					<td>32,200.00 </td>
+					<td>Win</td>
+				</tr>
+				<tr>
+					<td>2023-02-13 17:26:04</td>
+					<td>301331676289364905</td>
+					<td>deepak09</td>
+					<td>VIP Baccarat</td>
+					<td>31,900.00</td>
+					<td>0.00</td>
+					<td>300.00</td>
+					<td>32,200.00 </td>
+					<td>Win</td>
+				</tr>
+				<tr>
+					<td>2023-02-13 17:26:04</td>
+					<td>301331676289364905</td>
+					<td>deepak09</td>
+					<td>VIP Baccarat</td>
+					<td>31,900.00</td>
+					<td>0.00</td>
+					<td>300.00</td>
+					<td>32,200.00 </td>
+					<td>Win</td>
+				</tr>
+				<tr>
+					<td>2023-02-13 17:26:04</td>
+					<td>301331676289364905</td>
+					<td>deepak09</td>
+					<td>VIP Baccarat</td>
+					<td>31,900.00</td>
+					<td>0.00</td>
+					<td>300.00</td>
+					<td>32,200.00 </td>
+					<td>Win</td>
+				</tr>
+				<tr>
+					<td>2023-02-13 17:26:04</td>
+					<td>301331676289364905</td>
+					<td>deepak09</td>
+					<td>VIP Baccarat</td>
+					<td>31,900.00</td>
+					<td>0.00</td>
+					<td>300.00</td>
+					<td>32,200.00 </td>
+					<td>Win</td>
+				</tr>
+				<tr>
+					<td>2023-02-13 17:26:04</td>
+					<td>301331676289364905</td>
+					<td>deepak09</td>
+					<td>VIP Baccarat</td>
+					<td>31,900.00</td>
+					<td>0.00</td>
+					<td>300.00</td>
+					<td>32,200.00 </td>
+					<td>Win</td>
+				</tr>
+				<tr>
+					<td>2023-02-13 17:26:04</td>
+					<td>301331676289364905</td>
+					<td>deepak09</td>
+					<td>VIP Baccarat</td>
+					<td>31,900.00</td>
+					<td>0.00</td>
+					<td>300.00</td>
+					<td>32,200.00 </td>
+					<td>Win</td>
+				</tr>
+				<tr>
+					<td>2023-02-13 17:26:04</td>
+					<td>301331676289364905</td>
+					<td>deepak09</td>
+					<td>VIP Baccarat</td>
+					<td>31,900.00</td>
+					<td>0.00</td>
+					<td>300.00</td>
+					<td>32,200.00 </td>
+					<td>Win</td>
+				</tr>
+				<tr>
+					<td>2023-02-13 17:26:04</td>
+					<td>301331676289364905</td>
+					<td>deepak09</td>
+					<td>VIP Baccarat</td>
+					<td>31,900.00</td>
+					<td>0.00</td>
+					<td>300.00</td>
+					<td>32,200.00 </td>
+					<td>Win</td>
+				</tr>
+				<tr>
+					<td>2023-02-13 17:26:04</td>
+					<td>301331676289364905</td>
+					<td>deepak09</td>
+					<td>VIP Baccarat</td>
+					<td>31,900.00</td>
+					<td>0.00</td>
+					<td>300.00</td>
+					<td>32,200.00 </td>
+					<td>Win</td>
+				</tr>
+				<tr>
+					<td>2023-02-13 17:26:04</td>
+					<td>301331676289364905</td>
+					<td>deepak09</td>
+					<td>VIP Baccarat</td>
+					<td>31,900.00</td>
+					<td>0.00</td>
+					<td>300.00</td>
+					<td>32,200.00 </td>
+					<td>Win</td>
+				</tr>
+				<tr>
+					<td>2023-02-13 17:26:04</td>
+					<td>301331676289364905</td>
+					<td>deepak09</td>
+					<td>VIP Baccarat</td>
+					<td>31,900.00</td>
+					<td>0.00</td>
+					<td>300.00</td>
+					<td>32,200.00 </td>
+					<td>Win</td>
+				</tr>
+				
+			</tbody>
+			
+		</table>
+		
+	</div>
+
+	
+
+		
+</div>
+</div>
+
+
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<!-- <script type="text/javascript" src="assets/js/paginathing.js"></script>
+
+<script type="text/javascript">
+  jQuery(document).ready(function($){
+   
+
+    $('.table tbody').paginathing({
+      perPage: 10,
+      insertAfter: '.table',
+      pageNumbers: true
+    });
+  });
+</script> -->
+
+<script type="text/javascript" language="javascript" src="assets/js/jquery.dataTables.min.js"></script>
+<script>
+      jQuery(document).ready(function($){
+  $('.table').DataTable({
+    language: {
+      lengthMenu: "Rows per page _MENU_",
+      info: "_PAGE_ of _PAGES_",
+      search: "Cherche bouffon !",
+      paginate: {
+        first:      "Premier",
+        last:       "Précédent",
+        next:       ">",
+        previous:   "<"
+      }
+    }
+  });
+});
+    </script>
+
+<script>
+  $(".dropdown").click(function(){
+    $(this).toggleClass("dropdown-active").siblings().removeClass("dropdown-active");
+    //$(this).next(".sub-menu-list").toggleClass("sub_menu_active");
+  });
+</script>
+<script>
+	
+	$(".menu-toggle").click(function(){
+		$(this).toggleClass('menu-toggle-active');
+    $(".dashboardo-block").toggleClass("dashboardo-block-active");
+    $(".full-page").toggleClass("full-page-active");
+    $(".logo-menu").toggleClass("logo-menu-open");
+  });
+</script>
+
+<script>
+	$(".action").click(function(){
+		$(this).parent().parent().toggleClass("action-btn-open").siblings().removeClass("action-btn-open");
+	});
+</script>
+<script>
+
+	
+
+
+
+   
+
+const $menu = $('.dropdown-admin')
+
+const onMouseUp = e => {
+ if (!$menu.is(e.target) // If the target of the click isn't the container...
+   && $menu.has(e.target).length === 0) // ... or a descendant of the container.
+   {
+     $menu.removeClass('is-active')
+  }
+}
+
+$('.js-link').on('click', () => {
+	$(".online-players-list table tbody tr.action-btn-open").removeClass("action-btn-open");
+  $menu.toggleClass('is-active').promise().done(() => {
+    if ($menu.hasClass('is-active')) {
+      $(document).on('mouseup', onMouseUp) // Only listen for mouseup when menu is active...
+    } else {
+      $(document).off('mouseup', onMouseUp) // else remove listener.
+    }
+  })
+})
+
+
+
+	
+</script>
+
+<script>
+	
+ $(".search-btn").click(function(){
+    $.each($(".data-table tbody tr"), function() {
+
+       if($(this).text().toLowerCase().indexOf($('.table-search').val().toLowerCase()) === -1)
+          $(this).hide();
+          else
+           $(this).show();                
+    });
+  });
+</script>
+<script>
+	$("#search-filter-btn").click(function(){
+		$("#search-filter").toggleClass("filter-item-open");
+		$("#filter-filter").removeClass("filter-item-open");
+		$(".filter-btn").toggleClass("filter-btn-mb");
+	});
+</script>
+<script>
+	$("#filter-filter-btn").click(function(){
+		$("#search-filter").removeClass("filter-item-open");
+		$("#filter-filter").toggleClass("filter-item-open");
+		$(this).toggleClass("filter-btn-active");
+		$(".filter-btn").removeClass("filter-btn-mb");
+	});
+</script>
+<script>
+	$("#allcheckbox").click(function(){
+    $('input:checkbox').not(this).prop('checked', this.checked);
+});	
+</script>
+
+</body>
+</html>
